@@ -1,0 +1,37 @@
+artifact_path: /home/murtuza/Desktop/Mlops_training/E2E_Projects/Wine_quality_prediction/mlruns/2/models/m-13ba75d72db04e77a9bd9a17078edf06/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.10.12
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.3.0
+    skops_trusted_types: null
+is_signature_from_type_hint: false
+mlflow_version: 3.9.0
+model_id: m-13ba75d72db04e77a9bd9a17078edf06
+model_size_bytes: 694605
+model_uuid: m-13ba75d72db04e77a9bd9a17078edf06
+prompts: null
+run_id: f173f705b8914314aa76f69ce0a05a72
+signature:
+  inputs: '[{"type": "double", "name": "fixed acidity", "required": true}, {"type":
+    "double", "name": "volatile acidity", "required": true}, {"type": "double", "name":
+    "citric acid", "required": true}, {"type": "double", "name": "residual sugar",
+    "required": true}, {"type": "double", "name": "chlorides", "required": true},
+    {"type": "double", "name": "free sulfur dioxide", "required": true}, {"type":
+    "double", "name": "total sulfur dioxide", "required": true}, {"type": "double",
+    "name": "density", "required": true}, {"type": "double", "name": "pH", "required":
+    true}, {"type": "double", "name": "sulphates", "required": true}, {"type": "double",
+    "name": "alcohol", "required": true}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float64", "shape": [-1]}}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2026-02-06 10:22:18.549667'

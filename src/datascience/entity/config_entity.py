@@ -1,6 +1,6 @@
 from dataclasses import dataclass
 from pathlib import Path
-from typing import List
+from typing import Dict, List, Any
 
 @dataclass
 class DataIngestionConfig:
@@ -31,14 +31,19 @@ class ModelTrainerConfig:
     alpha: List[float]
     l1_ratio: List[float]
     target_column: str
+    models_config: Dict[str, Any]
+    scoring_metric: str
+    cv_folds: int
+    random_state: int
 
 @dataclass
 class ModelEvaluationConfig:
     root_dir: Path
     test_data_path: Path
     model_path: Path
-    all_params: dict
+    # all_params: dict
     metric_file_name: Path
     target_column: str
     mlflow_uri: str
-    best_run_id_path: str
+    # best_run_id_path: str
+    best_model_info_path: Path

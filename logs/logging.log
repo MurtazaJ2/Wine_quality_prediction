@@ -2087,3 +2087,1481 @@ x==========x]
 [2026-02-04 16:07:56,729: INFO: main: >>>>>> stage Model evaluation stage completed <<<<<<
 
 x==========x]
+[2026-02-05 14:48:48,485: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-02-05 14:48:48,486: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-02-05 14:48:48,487: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-05 14:48:48,487: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-05 14:48:48,487: INFO: common: created directory at: artifacts]
+[2026-02-05 14:48:48,487: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-02-05 14:48:48,487: INFO: data_ingestion: File already exists]
+[2026-02-05 14:48:48,488: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-02-05 14:48:48,488: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2026-02-05 14:48:48,522: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-02-05 14:48:48,523: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-05 14:48:48,523: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-05 14:48:48,523: INFO: common: created directory at: artifacts]
+[2026-02-05 14:48:48,523: INFO: common: created directory at: artifacts/data_validation]
+[2026-02-05 14:48:48,527: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2026-02-05 14:48:48,527: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2026-02-05 14:48:48,528: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-02-05 14:48:48,529: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-05 14:48:48,529: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-05 14:48:48,529: INFO: common: created directory at: artifacts]
+[2026-02-05 14:48:48,530: INFO: common: created directory at: artifacts/data_transformation]
+[2026-02-05 14:48:48,539: INFO: data_transformation: Splited data into training and test sets]
+[2026-02-05 14:48:48,539: INFO: data_transformation: (1199, 12)]
+[2026-02-05 14:48:48,539: INFO: data_transformation: (400, 12)]
+[2026-02-05 14:48:48,539: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2026-02-05 14:48:48,540: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2026-02-05 14:48:48,541: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-02-05 14:48:48,541: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-05 14:48:48,542: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-05 14:48:48,542: INFO: common: created directory at: artifacts]
+[2026-02-05 14:48:48,542: INFO: common: created directory at: artifacts/model_trainer]
+[2026-02-05 14:48:48,866: INFO: model_trainer: Training with params: {'alpha': 0.001, 'l1_ratio': 0.1}]
+[2026-02-05 14:48:51,693: INFO: model_trainer: Training with params: {'alpha': 0.001, 'l1_ratio': 0.3}]
+[2026-02-05 14:48:54,309: INFO: model_trainer: Training with params: {'alpha': 0.001, 'l1_ratio': 0.5}]
+[2026-02-05 14:48:56,844: INFO: model_trainer: Training with params: {'alpha': 0.01, 'l1_ratio': 0.1}]
+[2026-02-05 14:48:59,424: INFO: model_trainer: Training with params: {'alpha': 0.01, 'l1_ratio': 0.3}]
+[2026-02-05 14:49:01,959: INFO: model_trainer: Training with params: {'alpha': 0.01, 'l1_ratio': 0.5}]
+[2026-02-05 14:49:04,539: INFO: model_trainer: Training with params: {'alpha': 0.05, 'l1_ratio': 0.1}]
+[2026-02-05 14:49:07,090: INFO: model_trainer: Training with params: {'alpha': 0.05, 'l1_ratio': 0.3}]
+[2026-02-05 14:49:09,683: INFO: model_trainer: Training with params: {'alpha': 0.05, 'l1_ratio': 0.5}]
+[2026-02-05 14:49:12,226: INFO: model_trainer: Best model saved with R2: 0.33475955255557266]
+[2026-02-05 14:49:12,226: INFO: main: >>>>>> stage Model Trainer stage completed <<<<<<
+
+x==========x]
+[2026-02-05 14:49:12,227: INFO: main: >>>>>> stage Model evaluation stage started <<<<<<]
+[2026-02-05 14:49:12,232: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-02-05 14:49:12,233: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-05 14:49:12,235: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-05 14:49:12,235: INFO: common: created directory at: artifacts]
+[2026-02-05 14:49:12,235: INFO: common: created directory at: artifacts/model_evaluation]
+[2026-02-05 14:49:12,302: INFO: common: json file saved at: artifacts/model_evaluation/metrics.json]
+[2026-02-05 14:49:15,167: INFO: main: >>>>>> stage Model evaluation stage completed <<<<<<
+
+x==========x]
+[2026-02-06 11:07:47,689: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-02-06 11:07:47,690: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-02-06 11:07:47,691: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-06 11:07:47,692: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-06 11:07:47,692: INFO: common: created directory at: artifacts]
+[2026-02-06 11:07:47,692: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-02-06 11:07:47,692: INFO: data_ingestion: File already exists]
+[2026-02-06 11:07:47,693: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-02-06 11:07:47,693: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2026-02-06 11:07:47,726: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-02-06 11:07:47,727: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-06 11:07:47,728: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-06 11:07:47,728: INFO: common: created directory at: artifacts]
+[2026-02-06 11:07:47,728: INFO: common: created directory at: artifacts/data_validation]
+[2026-02-06 11:07:47,731: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2026-02-06 11:07:47,731: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2026-02-06 11:07:47,733: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-02-06 11:07:47,733: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-06 11:07:47,734: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-06 11:07:47,734: INFO: common: created directory at: artifacts]
+[2026-02-06 11:07:47,734: INFO: common: created directory at: artifacts/data_transformation]
+[2026-02-06 11:07:47,746: INFO: data_transformation: Splited data into training and test sets]
+[2026-02-06 11:07:47,746: INFO: data_transformation: (1199, 12)]
+[2026-02-06 11:07:47,746: INFO: data_transformation: (400, 12)]
+[2026-02-06 11:07:47,746: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2026-02-06 11:07:47,746: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2026-02-06 11:07:47,748: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-02-06 11:07:47,748: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-06 11:07:47,749: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-06 11:07:47,749: INFO: common: created directory at: artifacts]
+[2026-02-06 11:07:47,749: INFO: common: created directory at: artifacts/model_trainer]
+[2026-02-06 11:07:48,000: INFO: model_trainer: Training with params: {'alpha': 0.001, 'l1_ratio': 0.1}]
+[2026-02-06 11:07:51,039: INFO: model_trainer: Training with params: {'alpha': 0.001, 'l1_ratio': 0.3}]
+[2026-02-06 11:07:53,649: INFO: model_trainer: Training with params: {'alpha': 0.001, 'l1_ratio': 0.5}]
+[2026-02-06 11:07:56,301: INFO: model_trainer: Training with params: {'alpha': 0.01, 'l1_ratio': 0.1}]
+[2026-02-06 11:07:58,936: INFO: model_trainer: Training with params: {'alpha': 0.01, 'l1_ratio': 0.3}]
+[2026-02-06 11:08:01,556: INFO: model_trainer: Training with params: {'alpha': 0.01, 'l1_ratio': 0.5}]
+[2026-02-06 11:08:04,202: INFO: model_trainer: Training with params: {'alpha': 0.05, 'l1_ratio': 0.1}]
+[2026-02-06 11:08:06,804: INFO: model_trainer: Training with params: {'alpha': 0.05, 'l1_ratio': 0.3}]
+[2026-02-06 11:08:09,396: INFO: model_trainer: Training with params: {'alpha': 0.05, 'l1_ratio': 0.5}]
+[2026-02-06 11:08:11,946: INFO: model_trainer: Best model saved with R2: 0.37735041997213614]
+[2026-02-06 11:08:11,946: INFO: main: >>>>>> stage Model Trainer stage completed <<<<<<
+
+x==========x]
+[2026-02-06 11:08:11,946: INFO: main: >>>>>> stage Model evaluation stage started <<<<<<]
+[2026-02-06 11:08:11,952: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-02-06 11:08:11,954: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-06 11:08:11,957: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-06 11:08:11,957: INFO: common: created directory at: artifacts]
+[2026-02-06 11:08:11,957: INFO: common: created directory at: artifacts/model_evaluation]
+[2026-02-06 11:08:13,052: INFO: common: json file saved at: artifacts/model_evaluation/metrics.json]
+[2026-02-06 11:08:13,052: INFO: model_evaluation: Model registered from run bb91f56ec617416d95e0de1729ced819]
+[2026-02-06 11:08:13,052: INFO: main: >>>>>> stage Model evaluation stage completed <<<<<<
+
+x==========x]
+[2026-02-06 12:24:06,093: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-02-06 12:24:06,095: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-02-06 12:24:06,098: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-06 12:24:06,099: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-06 12:24:06,099: INFO: common: created directory at: artifacts]
+[2026-02-06 12:24:06,099: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-02-06 12:24:06,099: INFO: data_ingestion: File already exists]
+[2026-02-06 12:24:06,100: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-02-06 12:24:06,100: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2026-02-06 12:24:06,101: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-02-06 12:24:06,104: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-06 12:24:06,106: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-06 12:24:06,106: INFO: common: created directory at: artifacts]
+[2026-02-06 12:24:06,106: INFO: common: created directory at: artifacts/data_validation]
+[2026-02-06 12:24:06,109: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2026-02-06 12:24:06,109: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2026-02-06 12:24:06,111: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-02-06 12:24:06,118: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-06 12:24:06,119: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-06 12:24:06,119: INFO: common: created directory at: artifacts]
+[2026-02-06 12:24:06,119: INFO: common: created directory at: artifacts/data_transformation]
+[2026-02-06 12:24:06,132: INFO: data_transformation: Splited data into training and test sets]
+[2026-02-06 12:24:06,132: INFO: data_transformation: (1199, 12)]
+[2026-02-06 12:24:06,132: INFO: data_transformation: (400, 12)]
+[2026-02-06 12:24:06,133: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2026-02-06 12:24:06,133: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2026-02-06 12:24:06,134: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-02-06 12:24:06,137: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-06 12:24:06,138: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-06 12:24:06,138: INFO: common: created directory at: artifacts]
+[2026-02-06 12:24:06,138: INFO: common: created directory at: artifacts/model_trainer]
+[2026-02-06 12:24:06,138: ERROR: main: ModelTrainerConfig.__init__() missing 2 required positional arguments: 'alpha' and 'l1_ratio']
+Traceback (most recent call last):
+  File "/home/murtuza/Desktop/Mlops_training/E2E_Projects/Wine_quality_prediction/main.py", line 45, in <module>
+    data_ingestion.initiate_model_training()
+  File "/home/murtuza/Desktop/Mlops_training/E2E_Projects/Wine_quality_prediction/src/datascience/pipeline/model_trainer_pipeline.py", line 14, in initiate_model_training
+    model_trainer_config = config.get_model_trainer_config()
+  File "/home/murtuza/Desktop/Mlops_training/E2E_Projects/Wine_quality_prediction/src/datascience/config/configuration.py", line 65, in get_model_trainer_config
+    model_trainer_config = ModelTrainerConfig(
+TypeError: ModelTrainerConfig.__init__() missing 2 required positional arguments: 'alpha' and 'l1_ratio'
+[2026-02-06 12:26:14,246: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-02-06 12:26:14,248: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-02-06 12:26:14,251: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-06 12:26:14,252: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-06 12:26:14,252: INFO: common: created directory at: artifacts]
+[2026-02-06 12:26:14,252: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-02-06 12:26:14,252: INFO: data_ingestion: File already exists]
+[2026-02-06 12:26:14,253: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-02-06 12:26:14,253: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2026-02-06 12:26:14,254: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-02-06 12:26:14,257: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-06 12:26:14,258: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-06 12:26:14,258: INFO: common: created directory at: artifacts]
+[2026-02-06 12:26:14,258: INFO: common: created directory at: artifacts/data_validation]
+[2026-02-06 12:26:14,261: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2026-02-06 12:26:14,261: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2026-02-06 12:26:14,263: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-02-06 12:26:14,266: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-06 12:26:14,267: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-06 12:26:14,267: INFO: common: created directory at: artifacts]
+[2026-02-06 12:26:14,267: INFO: common: created directory at: artifacts/data_transformation]
+[2026-02-06 12:26:14,278: INFO: data_transformation: Splited data into training and test sets]
+[2026-02-06 12:26:14,279: INFO: data_transformation: (1199, 12)]
+[2026-02-06 12:26:14,279: INFO: data_transformation: (400, 12)]
+[2026-02-06 12:26:14,279: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2026-02-06 12:26:14,279: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2026-02-06 12:26:14,280: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-02-06 12:26:14,283: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-06 12:26:14,284: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-06 12:26:14,284: INFO: common: created directory at: artifacts]
+[2026-02-06 12:26:14,284: ERROR: main: "'ConfigBox' object has no attribute 'elasticnet'"]
+Traceback (most recent call last):
+  File "box/box.py", line 594, in box.box.Box.__getitem__
+KeyError: 'ElasticNet'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box/box.py", line 633, in box.box.Box.__getattr__
+  File "box/box.py", line 621, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'ElasticNet'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box/box.py", line 635, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'ElasticNet'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box/config_box.py", line 29, in box.config_box.ConfigBox.__getattr__
+  File "box/box.py", line 649, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'ElasticNet'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box/box.py", line 594, in box.box.Box.__getitem__
+KeyError: 'elasticnet'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box/box.py", line 633, in box.box.Box.__getattr__
+  File "box/box.py", line 621, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'elasticnet'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box/box.py", line 635, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'elasticnet'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/murtuza/Desktop/Mlops_training/E2E_Projects/Wine_quality_prediction/main.py", line 45, in <module>
+    data_ingestion.initiate_model_training()
+  File "/home/murtuza/Desktop/Mlops_training/E2E_Projects/Wine_quality_prediction/src/datascience/pipeline/model_trainer_pipeline.py", line 14, in initiate_model_training
+    model_trainer_config = config.get_model_trainer_config()
+  File "/home/murtuza/Desktop/Mlops_training/E2E_Projects/Wine_quality_prediction/src/datascience/config/configuration.py", line 59, in get_model_trainer_config
+    params = self.params.ElasticNet
+  File "box/config_box.py", line 31, in box.config_box.ConfigBox.__getattr__
+  File "box/box.py", line 649, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'elasticnet'"
+[2026-02-06 12:27:50,825: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-02-06 12:27:50,827: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-02-06 12:27:50,830: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-06 12:27:50,831: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-06 12:27:50,831: INFO: common: created directory at: artifacts]
+[2026-02-06 12:27:50,831: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-02-06 12:27:50,831: INFO: data_ingestion: File already exists]
+[2026-02-06 12:27:50,832: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-02-06 12:27:50,832: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2026-02-06 12:27:50,833: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-02-06 12:27:50,836: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-06 12:27:50,837: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-06 12:27:50,837: INFO: common: created directory at: artifacts]
+[2026-02-06 12:27:50,837: INFO: common: created directory at: artifacts/data_validation]
+[2026-02-06 12:27:50,840: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2026-02-06 12:27:50,840: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2026-02-06 12:27:50,841: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-02-06 12:27:50,844: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-06 12:27:50,845: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-06 12:27:50,846: INFO: common: created directory at: artifacts]
+[2026-02-06 12:27:50,846: INFO: common: created directory at: artifacts/data_transformation]
+[2026-02-06 12:27:50,857: INFO: data_transformation: Splited data into training and test sets]
+[2026-02-06 12:27:50,857: INFO: data_transformation: (1199, 12)]
+[2026-02-06 12:27:50,857: INFO: data_transformation: (400, 12)]
+[2026-02-06 12:27:50,857: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2026-02-06 12:27:50,857: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2026-02-06 12:27:50,858: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-02-06 12:27:50,861: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-06 12:27:50,862: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-06 12:27:50,862: INFO: common: created directory at: artifacts]
+[2026-02-06 12:27:50,862: INFO: common: created directory at: artifacts/model_trainer]
+[2026-02-06 12:27:50,862: ERROR: main: "'ConfigBox' object has no attribute 'alpha'"]
+Traceback (most recent call last):
+  File "box/box.py", line 594, in box.box.Box.__getitem__
+KeyError: 'alpha'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box/box.py", line 633, in box.box.Box.__getattr__
+  File "box/box.py", line 621, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'alpha'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box/box.py", line 635, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'alpha'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box/config_box.py", line 29, in box.config_box.ConfigBox.__getattr__
+  File "box/box.py", line 649, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'alpha'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box/box.py", line 594, in box.box.Box.__getitem__
+KeyError: 'alpha'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box/box.py", line 633, in box.box.Box.__getattr__
+  File "box/box.py", line 621, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'alpha'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box/box.py", line 635, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'alpha'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/murtuza/Desktop/Mlops_training/E2E_Projects/Wine_quality_prediction/main.py", line 45, in <module>
+    data_ingestion.initiate_model_training()
+  File "/home/murtuza/Desktop/Mlops_training/E2E_Projects/Wine_quality_prediction/src/datascience/pipeline/model_trainer_pipeline.py", line 14, in initiate_model_training
+    model_trainer_config = config.get_model_trainer_config()
+  File "/home/murtuza/Desktop/Mlops_training/E2E_Projects/Wine_quality_prediction/src/datascience/config/configuration.py", line 76, in get_model_trainer_config
+    alpha = params.alpha,
+  File "box/config_box.py", line 31, in box.config_box.ConfigBox.__getattr__
+  File "box/box.py", line 649, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'alpha'"
+[2026-02-06 12:29:11,751: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-02-06 12:29:11,753: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-02-06 12:29:11,756: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-06 12:29:11,757: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-06 12:29:11,757: INFO: common: created directory at: artifacts]
+[2026-02-06 12:29:11,757: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-02-06 12:29:11,757: INFO: data_ingestion: File already exists]
+[2026-02-06 12:29:11,758: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-02-06 12:29:11,758: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2026-02-06 12:29:11,759: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-02-06 12:29:11,762: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-06 12:29:11,763: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-06 12:29:11,764: INFO: common: created directory at: artifacts]
+[2026-02-06 12:29:11,764: INFO: common: created directory at: artifacts/data_validation]
+[2026-02-06 12:29:11,767: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2026-02-06 12:29:11,767: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2026-02-06 12:29:11,768: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-02-06 12:29:11,772: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-06 12:29:11,773: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-06 12:29:11,773: INFO: common: created directory at: artifacts]
+[2026-02-06 12:29:11,773: INFO: common: created directory at: artifacts/data_transformation]
+[2026-02-06 12:29:11,785: INFO: data_transformation: Splited data into training and test sets]
+[2026-02-06 12:29:11,785: INFO: data_transformation: (1199, 12)]
+[2026-02-06 12:29:11,785: INFO: data_transformation: (400, 12)]
+[2026-02-06 12:29:11,785: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2026-02-06 12:29:11,785: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2026-02-06 12:29:11,787: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-02-06 12:29:11,790: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-06 12:29:11,791: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-06 12:29:11,791: INFO: common: created directory at: artifacts]
+[2026-02-06 12:29:11,791: INFO: common: created directory at: artifacts/model_trainer]
+[2026-02-06 12:29:12,205: INFO: model_trainer: Starting multi-model training with 5 models]
+[2026-02-06 12:29:12,206: INFO: model_trainer: Training data shape: (1199, 11)]
+[2026-02-06 12:29:12,206: INFO: model_trainer: Test data shape: (400, 11)]
+[2026-02-06 12:29:12,206: INFO: model_trainer: Training ElasticNet...]
+[2026-02-06 12:29:12,206: INFO: model_trainer: Performing GridSearchCV for ElasticNet]
+[2026-02-06 12:29:13,587: INFO: model_trainer: ElasticNet - Best CV Score: 0.3455]
+[2026-02-06 12:29:13,587: INFO: model_trainer: ElasticNet - Test R2: 0.3352]
+[2026-02-06 12:29:13,587: INFO: model_trainer: ElasticNet - Best Params: {'alpha': 0.001, 'l1_ratio': 0.1, 'random_state': 42}]
+[2026-02-06 12:29:15,487: INFO: model_trainer: Training RandomForestRegressor...]
+[2026-02-06 12:29:15,487: INFO: model_trainer: Performing GridSearchCV for RandomForestRegressor]
+[2026-02-06 12:29:23,825: INFO: model_trainer: RandomForestRegressor - Best CV Score: 0.4461]
+[2026-02-06 12:29:23,825: INFO: model_trainer: RandomForestRegressor - Test R2: 0.4734]
+[2026-02-06 12:29:23,825: INFO: model_trainer: RandomForestRegressor - Best Params: {'max_depth': 20, 'min_samples_split': 2, 'n_estimators': 300, 'random_state': 42}]
+[2026-02-06 12:29:25,268: INFO: model_trainer: Training GradientBoostingRegressor...]
+[2026-02-06 12:29:25,268: INFO: model_trainer: Performing GridSearchCV for GradientBoostingRegressor]
+[2026-02-06 12:29:28,223: INFO: model_trainer: GradientBoostingRegressor - Best CV Score: 0.4130]
+[2026-02-06 12:29:28,223: INFO: model_trainer: GradientBoostingRegressor - Test R2: 0.4427]
+[2026-02-06 12:29:28,223: INFO: model_trainer: GradientBoostingRegressor - Best Params: {'learning_rate': 0.05, 'max_depth': 5, 'n_estimators': 200, 'random_state': 42}]
+[2026-02-06 12:29:29,621: INFO: model_trainer: Training XGBRegressor...]
+[2026-02-06 12:29:29,621: INFO: model_trainer: Performing GridSearchCV for XGBRegressor]
+[2026-02-06 12:29:34,811: INFO: model_trainer: XGBRegressor - Best CV Score: 0.4222]
+[2026-02-06 12:29:34,811: INFO: model_trainer: XGBRegressor - Test R2: 0.4475]
+[2026-02-06 12:29:34,811: INFO: model_trainer: XGBRegressor - Best Params: {'learning_rate': 0.01, 'max_depth': 9, 'n_estimators': 200, 'random_state': 42, 'subsample': 0.8}]
+[2026-02-06 12:29:36,819: INFO: model_trainer: Training LGBMRegressor...]
+[2026-02-06 12:29:36,819: INFO: model_trainer: Performing GridSearchCV for LGBMRegressor]
+[2026-02-06 14:03:13,378: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-02-06 14:03:13,380: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-02-06 14:03:13,383: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-06 14:03:13,384: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-06 14:03:13,384: INFO: common: created directory at: artifacts]
+[2026-02-06 14:03:13,384: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-02-06 14:03:13,384: INFO: data_ingestion: File already exists]
+[2026-02-06 14:03:13,385: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-02-06 14:03:13,385: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2026-02-06 14:03:13,387: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-02-06 14:03:13,390: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-06 14:03:13,391: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-06 14:03:13,391: INFO: common: created directory at: artifacts]
+[2026-02-06 14:03:13,391: INFO: common: created directory at: artifacts/data_validation]
+[2026-02-06 14:03:13,394: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2026-02-06 14:03:13,394: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2026-02-06 14:03:13,395: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-02-06 14:03:13,399: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-06 14:03:13,399: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-06 14:03:13,400: INFO: common: created directory at: artifacts]
+[2026-02-06 14:03:13,400: INFO: common: created directory at: artifacts/data_transformation]
+[2026-02-06 14:03:13,408: INFO: data_transformation: Splited data into training and test sets]
+[2026-02-06 14:03:13,408: INFO: data_transformation: (1199, 12)]
+[2026-02-06 14:03:13,408: INFO: data_transformation: (400, 12)]
+[2026-02-06 14:03:13,408: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2026-02-06 14:03:13,408: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2026-02-06 14:03:13,409: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-02-06 14:03:13,412: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-06 14:03:13,413: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-06 14:03:13,413: INFO: common: created directory at: artifacts]
+[2026-02-06 14:03:13,413: INFO: common: created directory at: artifacts/model_trainer]
+[2026-02-06 14:03:13,750: INFO: model_trainer: Starting multi-model training with 5 models]
+[2026-02-06 14:03:13,750: INFO: model_trainer: Training data shape: (1199, 11)]
+[2026-02-06 14:03:13,750: INFO: model_trainer: Test data shape: (400, 11)]
+[2026-02-06 14:03:13,750: INFO: model_trainer: Training ElasticNet...]
+[2026-02-06 14:03:13,750: INFO: model_trainer: Performing GridSearchCV for ElasticNet]
+[2026-02-06 14:03:14,979: INFO: model_trainer: ElasticNet - Best CV Score: 0.3598]
+[2026-02-06 14:03:14,979: INFO: model_trainer: ElasticNet - Test R2: 0.3124]
+[2026-02-06 14:03:14,979: INFO: model_trainer: ElasticNet - Best Params: {'alpha': 0.001, 'l1_ratio': 0.1, 'random_state': 42}]
+[2026-02-06 14:03:17,196: INFO: model_trainer: Training RandomForestRegressor...]
+[2026-02-06 14:03:17,197: INFO: model_trainer: Performing GridSearchCV for RandomForestRegressor]
+[2026-02-06 14:03:21,708: INFO: model_trainer: RandomForestRegressor - Best CV Score: 0.4719]
+[2026-02-06 14:03:21,708: INFO: model_trainer: RandomForestRegressor - Test R2: 0.3943]
+[2026-02-06 14:03:21,708: INFO: model_trainer: RandomForestRegressor - Best Params: {'max_depth': 20, 'min_samples_split': 2, 'n_estimators': 200, 'random_state': 42}]
+[2026-02-06 14:03:23,430: INFO: model_trainer: Training GradientBoostingRegressor...]
+[2026-02-06 14:03:23,430: INFO: model_trainer: Performing GridSearchCV for GradientBoostingRegressor]
+[2026-02-06 14:03:25,271: INFO: model_trainer: GradientBoostingRegressor - Best CV Score: 0.4592]
+[2026-02-06 14:03:25,271: INFO: model_trainer: GradientBoostingRegressor - Test R2: 0.3676]
+[2026-02-06 14:03:25,271: INFO: model_trainer: GradientBoostingRegressor - Best Params: {'learning_rate': 0.05, 'max_depth': 5, 'n_estimators': 200, 'random_state': 42}]
+[2026-02-06 14:03:26,758: INFO: model_trainer: Training XGBRegressor...]
+[2026-02-06 14:03:26,758: INFO: model_trainer: Performing GridSearchCV for XGBRegressor]
+[2026-02-06 14:03:28,622: INFO: model_trainer: XGBRegressor - Best CV Score: 0.4709]
+[2026-02-06 14:03:28,622: INFO: model_trainer: XGBRegressor - Test R2: 0.3747]
+[2026-02-06 14:03:28,622: INFO: model_trainer: XGBRegressor - Best Params: {'learning_rate': 0.05, 'max_depth': 6, 'n_estimators': 200, 'random_state': 42, 'subsample': 0.9}]
+[2026-02-06 14:03:31,030: INFO: model_trainer: Training LGBMRegressor...]
+[2026-02-06 14:03:31,030: INFO: model_trainer: Performing GridSearchCV for LGBMRegressor]
+[2026-02-06 14:07:25,716: INFO: model_trainer: LGBMRegressor - Best CV Score: 0.4417]
+[2026-02-06 14:07:25,717: INFO: model_trainer: LGBMRegressor - Test R2: 0.3612]
+[2026-02-06 14:07:25,717: INFO: model_trainer: LGBMRegressor - Best Params: {'learning_rate': 0.05, 'max_depth': 5, 'n_estimators': 100, 'num_leaves': 31, 'random_state': 42, 'silent': True, 'verbose': -1}]
+[2026-02-06 14:07:29,119: ERROR: main: Argument path of type <class 'str'> to <function save_json at 0x742243d32170> does not match annotation type <class 'pathlib.Path'>]
+Traceback (most recent call last):
+  File "/home/murtuza/Desktop/Mlops_training/E2E_Projects/Wine_quality_prediction/main.py", line 45, in <module>
+    data_ingestion.initiate_model_training()
+  File "/home/murtuza/Desktop/Mlops_training/E2E_Projects/Wine_quality_prediction/src/datascience/pipeline/model_trainer_pipeline.py", line 16, in initiate_model_training
+    model_trainer_config.train()
+  File "/home/murtuza/Desktop/Mlops_training/E2E_Projects/Wine_quality_prediction/src/datascience/components/model_trainer.py", line 199, in train
+    self.save_models(X_train, X_test, y_test)
+  File "/home/murtuza/Desktop/Mlops_training/E2E_Projects/Wine_quality_prediction/src/datascience/components/model_trainer.py", line 248, in save_models
+    save_json(best_info_path, best_model_info)
+  File "/home/murtuza/Desktop/Mlops_training/E2E_Projects/Wine_quality_prediction/venv/lib/python3.10/site-packages/ensure/main.py", line 833, in __call__
+    raise EnsureError(msg.format(arg=arg, f=self.f, t=templ, valt=type(value)))
+ensure.main.EnsureError: Argument path of type <class 'str'> to <function save_json at 0x742243d32170> does not match annotation type <class 'pathlib.Path'>
+[2026-02-06 14:13:16,486: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-02-06 14:13:16,487: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-02-06 14:13:16,491: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-06 14:13:16,492: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-06 14:13:16,493: INFO: common: created directory at: artifacts]
+[2026-02-06 14:13:16,493: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-02-06 14:13:16,493: INFO: data_ingestion: File already exists]
+[2026-02-06 14:13:16,494: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-02-06 14:13:16,494: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2026-02-06 14:13:16,495: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-02-06 14:13:16,498: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-06 14:13:16,499: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-06 14:13:16,500: INFO: common: created directory at: artifacts]
+[2026-02-06 14:13:16,500: INFO: common: created directory at: artifacts/data_validation]
+[2026-02-06 14:13:16,502: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2026-02-06 14:13:16,502: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2026-02-06 14:13:16,504: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-02-06 14:13:16,508: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-06 14:13:16,509: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-06 14:13:16,509: INFO: common: created directory at: artifacts]
+[2026-02-06 14:13:16,509: INFO: common: created directory at: artifacts/data_transformation]
+[2026-02-06 14:13:16,517: INFO: data_transformation: Splited data into training and test sets]
+[2026-02-06 14:13:16,517: INFO: data_transformation: (1199, 12)]
+[2026-02-06 14:13:16,517: INFO: data_transformation: (400, 12)]
+[2026-02-06 14:13:16,517: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2026-02-06 14:13:16,517: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2026-02-06 14:13:16,519: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-02-06 14:13:16,522: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-06 14:13:16,522: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-06 14:13:16,523: INFO: common: created directory at: artifacts]
+[2026-02-06 14:13:16,523: INFO: common: created directory at: artifacts/model_trainer]
+[2026-02-06 14:13:16,875: ERROR: main: Cannot set a deleted experiment 'Wine Quality Multi-Model Comparison' as the active experiment. You can restore the experiment, or permanently delete the experiment to create a new one.]
+Traceback (most recent call last):
+  File "/home/murtuza/Desktop/Mlops_training/E2E_Projects/Wine_quality_prediction/main.py", line 45, in <module>
+    data_ingestion.initiate_model_training()
+  File "/home/murtuza/Desktop/Mlops_training/E2E_Projects/Wine_quality_prediction/src/datascience/pipeline/model_trainer_pipeline.py", line 16, in initiate_model_training
+    model_trainer_config.train()
+  File "/home/murtuza/Desktop/Mlops_training/E2E_Projects/Wine_quality_prediction/src/datascience/components/model_trainer.py", line 159, in train
+    mlflow.set_experiment(self.experiment_name)
+  File "/home/murtuza/Desktop/Mlops_training/E2E_Projects/Wine_quality_prediction/venv/lib/python3.10/site-packages/mlflow/tracking/fluent.py", line 220, in set_experiment
+    raise MlflowException(
+mlflow.exceptions.MlflowException: Cannot set a deleted experiment 'Wine Quality Multi-Model Comparison' as the active experiment. You can restore the experiment, or permanently delete the experiment to create a new one.
+[2026-02-06 14:14:14,155: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-02-06 14:14:14,157: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-02-06 14:14:14,160: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-06 14:14:14,161: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-06 14:14:14,161: INFO: common: created directory at: artifacts]
+[2026-02-06 14:14:14,162: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-02-06 14:14:14,162: INFO: data_ingestion: File already exists]
+[2026-02-06 14:14:14,163: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-02-06 14:14:14,163: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2026-02-06 14:14:14,164: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-02-06 14:14:14,167: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-06 14:14:14,168: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-06 14:14:14,168: INFO: common: created directory at: artifacts]
+[2026-02-06 14:14:14,168: INFO: common: created directory at: artifacts/data_validation]
+[2026-02-06 14:14:14,171: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2026-02-06 14:14:14,171: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2026-02-06 14:14:14,173: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-02-06 14:14:14,176: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-06 14:14:14,177: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-06 14:14:14,178: INFO: common: created directory at: artifacts]
+[2026-02-06 14:14:14,178: INFO: common: created directory at: artifacts/data_transformation]
+[2026-02-06 14:14:14,186: INFO: data_transformation: Splited data into training and test sets]
+[2026-02-06 14:14:14,186: INFO: data_transformation: (1199, 12)]
+[2026-02-06 14:14:14,186: INFO: data_transformation: (400, 12)]
+[2026-02-06 14:14:14,186: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2026-02-06 14:14:14,186: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2026-02-06 14:14:14,188: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-02-06 14:14:14,191: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-06 14:14:14,192: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-06 14:14:14,192: INFO: common: created directory at: artifacts]
+[2026-02-06 14:14:14,192: INFO: common: created directory at: artifacts/model_trainer]
+[2026-02-06 14:14:14,487: ERROR: main: Cannot set a deleted experiment 'Wine Quality Multi-Model Comparison' as the active experiment. You can restore the experiment, or permanently delete the experiment to create a new one.]
+Traceback (most recent call last):
+  File "/home/murtuza/Desktop/Mlops_training/E2E_Projects/Wine_quality_prediction/main.py", line 45, in <module>
+    data_ingestion.initiate_model_training()
+  File "/home/murtuza/Desktop/Mlops_training/E2E_Projects/Wine_quality_prediction/src/datascience/pipeline/model_trainer_pipeline.py", line 16, in initiate_model_training
+    model_trainer_config.train()
+  File "/home/murtuza/Desktop/Mlops_training/E2E_Projects/Wine_quality_prediction/src/datascience/components/model_trainer.py", line 159, in train
+    mlflow.set_experiment(self.experiment_name)
+  File "/home/murtuza/Desktop/Mlops_training/E2E_Projects/Wine_quality_prediction/venv/lib/python3.10/site-packages/mlflow/tracking/fluent.py", line 220, in set_experiment
+    raise MlflowException(
+mlflow.exceptions.MlflowException: Cannot set a deleted experiment 'Wine Quality Multi-Model Comparison' as the active experiment. You can restore the experiment, or permanently delete the experiment to create a new one.
+[2026-02-06 14:14:50,381: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-02-06 14:14:50,383: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-02-06 14:14:50,386: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-06 14:14:50,387: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-06 14:14:50,387: INFO: common: created directory at: artifacts]
+[2026-02-06 14:14:50,387: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-02-06 14:14:50,387: INFO: data_ingestion: File already exists]
+[2026-02-06 14:14:50,388: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-02-06 14:14:50,388: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2026-02-06 14:14:50,389: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-02-06 14:14:50,392: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-06 14:14:50,393: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-06 14:14:50,393: INFO: common: created directory at: artifacts]
+[2026-02-06 14:14:50,393: INFO: common: created directory at: artifacts/data_validation]
+[2026-02-06 14:14:50,396: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2026-02-06 14:14:50,396: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2026-02-06 14:14:50,398: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-02-06 14:14:50,401: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-06 14:14:50,402: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-06 14:14:50,402: INFO: common: created directory at: artifacts]
+[2026-02-06 14:14:50,402: INFO: common: created directory at: artifacts/data_transformation]
+[2026-02-06 14:14:50,411: INFO: data_transformation: Splited data into training and test sets]
+[2026-02-06 14:14:50,411: INFO: data_transformation: (1199, 12)]
+[2026-02-06 14:14:50,411: INFO: data_transformation: (400, 12)]
+[2026-02-06 14:14:50,411: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2026-02-06 14:14:50,411: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2026-02-06 14:14:50,413: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-02-06 14:14:50,416: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-06 14:14:50,417: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-06 14:14:50,417: INFO: common: created directory at: artifacts]
+[2026-02-06 14:14:50,417: INFO: common: created directory at: artifacts/model_trainer]
+[2026-02-06 14:14:50,706: ERROR: main: Cannot set a deleted experiment 'Wine Quality Multi-Model Comparison' as the active experiment. You can restore the experiment, or permanently delete the experiment to create a new one.]
+Traceback (most recent call last):
+  File "/home/murtuza/Desktop/Mlops_training/E2E_Projects/Wine_quality_prediction/main.py", line 45, in <module>
+    data_ingestion.initiate_model_training()
+  File "/home/murtuza/Desktop/Mlops_training/E2E_Projects/Wine_quality_prediction/src/datascience/pipeline/model_trainer_pipeline.py", line 16, in initiate_model_training
+    model_trainer_config.train()
+  File "/home/murtuza/Desktop/Mlops_training/E2E_Projects/Wine_quality_prediction/src/datascience/components/model_trainer.py", line 159, in train
+    mlflow.set_experiment(self.experiment_name)
+  File "/home/murtuza/Desktop/Mlops_training/E2E_Projects/Wine_quality_prediction/venv/lib/python3.10/site-packages/mlflow/tracking/fluent.py", line 220, in set_experiment
+    raise MlflowException(
+mlflow.exceptions.MlflowException: Cannot set a deleted experiment 'Wine Quality Multi-Model Comparison' as the active experiment. You can restore the experiment, or permanently delete the experiment to create a new one.
+[2026-02-06 14:20:07,746: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-02-06 14:20:07,748: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-02-06 14:20:07,751: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-06 14:20:07,752: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-06 14:20:07,752: INFO: common: created directory at: artifacts]
+[2026-02-06 14:20:07,752: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-02-06 14:20:07,752: INFO: data_ingestion: File already exists]
+[2026-02-06 14:20:07,753: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-02-06 14:20:07,753: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2026-02-06 14:20:07,754: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-02-06 14:20:07,757: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-06 14:20:07,758: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-06 14:20:07,758: INFO: common: created directory at: artifacts]
+[2026-02-06 14:20:07,758: INFO: common: created directory at: artifacts/data_validation]
+[2026-02-06 14:20:07,761: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2026-02-06 14:20:07,761: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2026-02-06 14:20:07,762: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-02-06 14:20:07,766: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-06 14:20:07,767: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-06 14:20:07,767: INFO: common: created directory at: artifacts]
+[2026-02-06 14:20:07,767: INFO: common: created directory at: artifacts/data_transformation]
+[2026-02-06 14:20:07,775: INFO: data_transformation: Splited data into training and test sets]
+[2026-02-06 14:20:07,775: INFO: data_transformation: (1199, 12)]
+[2026-02-06 14:20:07,775: INFO: data_transformation: (400, 12)]
+[2026-02-06 14:20:07,775: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2026-02-06 14:20:07,775: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2026-02-06 14:20:07,776: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-02-06 14:20:07,779: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-06 14:20:07,780: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-06 14:20:07,780: INFO: common: created directory at: artifacts]
+[2026-02-06 14:20:07,780: INFO: common: created directory at: artifacts/model_trainer]
+[2026-02-06 14:20:08,069: INFO: main: >>>>>> stage Model Trainer stage completed <<<<<<
+
+x==========x]
+[2026-02-06 14:20:08,069: INFO: main: >>>>>> stage Model evaluation stage started <<<<<<]
+[2026-02-06 14:20:08,071: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-02-06 14:20:08,074: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-06 14:20:08,075: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-06 14:20:08,075: INFO: common: created directory at: artifacts]
+[2026-02-06 14:20:08,075: INFO: common: created directory at: artifacts/model_evaluation]
+[2026-02-06 14:20:08,075: ERROR: main: ModelEvaluationConfig.__init__() missing 2 required positional arguments: 'all_params' and 'best_run_id_path']
+Traceback (most recent call last):
+  File "/home/murtuza/Desktop/Mlops_training/E2E_Projects/Wine_quality_prediction/main.py", line 55, in <module>
+    data_ingestion.initiate_model_evaluation()
+  File "/home/murtuza/Desktop/Mlops_training/E2E_Projects/Wine_quality_prediction/src/datascience/pipeline/model_evaluation_pipeline.py", line 13, in initiate_model_evaluation
+    model_evaluation_config = config.get_model_evaluation_config()
+  File "/home/murtuza/Desktop/Mlops_training/E2E_Projects/Wine_quality_prediction/src/datascience/config/configuration.py", line 87, in get_model_evaluation_config
+    model_evaluation_config = ModelEvaluationConfig(
+TypeError: ModelEvaluationConfig.__init__() missing 2 required positional arguments: 'all_params' and 'best_run_id_path'
+[2026-02-06 14:21:50,907: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-02-06 14:21:50,909: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-02-06 14:21:50,911: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-06 14:21:50,912: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-06 14:21:50,913: INFO: common: created directory at: artifacts]
+[2026-02-06 14:21:50,913: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-02-06 14:21:50,913: INFO: data_ingestion: File already exists]
+[2026-02-06 14:21:50,913: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-02-06 14:21:50,913: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2026-02-06 14:21:50,915: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-02-06 14:21:50,918: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-06 14:21:50,919: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-06 14:21:50,919: INFO: common: created directory at: artifacts]
+[2026-02-06 14:21:50,919: INFO: common: created directory at: artifacts/data_validation]
+[2026-02-06 14:21:50,922: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2026-02-06 14:21:50,922: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2026-02-06 14:21:50,923: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-02-06 14:21:50,926: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-06 14:21:50,927: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-06 14:21:50,927: INFO: common: created directory at: artifacts]
+[2026-02-06 14:21:50,927: INFO: common: created directory at: artifacts/data_transformation]
+[2026-02-06 14:21:50,935: INFO: data_transformation: Splited data into training and test sets]
+[2026-02-06 14:21:50,935: INFO: data_transformation: (1199, 12)]
+[2026-02-06 14:21:50,935: INFO: data_transformation: (400, 12)]
+[2026-02-06 14:21:50,935: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2026-02-06 14:21:50,935: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2026-02-06 14:21:50,937: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-02-06 14:21:50,940: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-06 14:21:50,941: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-06 14:21:50,941: INFO: common: created directory at: artifacts]
+[2026-02-06 14:21:50,941: INFO: common: created directory at: artifacts/model_trainer]
+[2026-02-06 14:21:51,234: INFO: main: >>>>>> stage Model Trainer stage completed <<<<<<
+
+x==========x]
+[2026-02-06 14:21:51,235: INFO: main: >>>>>> stage Model evaluation stage started <<<<<<]
+[2026-02-06 14:21:51,236: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-02-06 14:21:51,239: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-06 14:21:51,240: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-06 14:21:51,240: INFO: common: created directory at: artifacts]
+[2026-02-06 14:21:51,240: INFO: common: created directory at: artifacts/model_evaluation]
+[2026-02-06 14:21:51,240: ERROR: main: ModelEvaluationConfig.__init__() missing 2 required positional arguments: 'all_params' and 'best_run_id_path']
+Traceback (most recent call last):
+  File "/home/murtuza/Desktop/Mlops_training/E2E_Projects/Wine_quality_prediction/main.py", line 55, in <module>
+    data_ingestion.initiate_model_evaluation()
+  File "/home/murtuza/Desktop/Mlops_training/E2E_Projects/Wine_quality_prediction/src/datascience/pipeline/model_evaluation_pipeline.py", line 13, in initiate_model_evaluation
+    model_evaluation_config = config.get_model_evaluation_config()
+  File "/home/murtuza/Desktop/Mlops_training/E2E_Projects/Wine_quality_prediction/src/datascience/config/configuration.py", line 87, in get_model_evaluation_config
+    model_evaluation_config = ModelEvaluationConfig(
+TypeError: ModelEvaluationConfig.__init__() missing 2 required positional arguments: 'all_params' and 'best_run_id_path'
+[2026-02-06 14:22:16,397: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-02-06 14:22:16,399: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-02-06 14:22:16,402: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-06 14:22:16,403: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-06 14:22:16,403: INFO: common: created directory at: artifacts]
+[2026-02-06 14:22:16,403: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-02-06 14:22:16,403: INFO: data_ingestion: File already exists]
+[2026-02-06 14:22:16,404: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-02-06 14:22:16,404: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2026-02-06 14:22:16,405: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-02-06 14:22:16,408: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-06 14:22:16,409: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-06 14:22:16,409: INFO: common: created directory at: artifacts]
+[2026-02-06 14:22:16,409: INFO: common: created directory at: artifacts/data_validation]
+[2026-02-06 14:22:16,412: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2026-02-06 14:22:16,412: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2026-02-06 14:22:16,414: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-02-06 14:22:16,417: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-06 14:22:16,418: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-06 14:22:16,418: INFO: common: created directory at: artifacts]
+[2026-02-06 14:22:16,418: INFO: common: created directory at: artifacts/data_transformation]
+[2026-02-06 14:22:16,426: INFO: data_transformation: Splited data into training and test sets]
+[2026-02-06 14:22:16,426: INFO: data_transformation: (1199, 12)]
+[2026-02-06 14:22:16,426: INFO: data_transformation: (400, 12)]
+[2026-02-06 14:22:16,426: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2026-02-06 14:22:16,426: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2026-02-06 14:22:16,428: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-02-06 14:22:16,431: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-06 14:22:16,432: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-06 14:22:16,432: INFO: common: created directory at: artifacts]
+[2026-02-06 14:22:16,432: INFO: common: created directory at: artifacts/model_trainer]
+[2026-02-06 14:22:16,722: ERROR: main: No Experiment with id=2 exists]
+Traceback (most recent call last):
+  File "/home/murtuza/Desktop/Mlops_training/E2E_Projects/Wine_quality_prediction/main.py", line 45, in <module>
+    data_ingestion.initiate_model_training()
+  File "/home/murtuza/Desktop/Mlops_training/E2E_Projects/Wine_quality_prediction/src/datascience/pipeline/model_trainer_pipeline.py", line 16, in initiate_model_training
+    model_trainer_config.train()
+  File "/home/murtuza/Desktop/Mlops_training/E2E_Projects/Wine_quality_prediction/src/datascience/components/model_trainer.py", line 161, in train
+    client.delete_experiment(exp.experiment_id)
+  File "/home/murtuza/Desktop/Mlops_training/E2E_Projects/Wine_quality_prediction/venv/lib/python3.10/site-packages/mlflow/tracking/client.py", line 2014, in delete_experiment
+    self._tracking_client.delete_experiment(experiment_id)
+  File "/home/murtuza/Desktop/Mlops_training/E2E_Projects/Wine_quality_prediction/venv/lib/python3.10/site-packages/mlflow/tracking/_tracking_service/client.py", line 311, in delete_experiment
+    self.store.delete_experiment(experiment_id)
+  File "/home/murtuza/Desktop/Mlops_training/E2E_Projects/Wine_quality_prediction/venv/lib/python3.10/site-packages/mlflow/store/tracking/sqlalchemy_store.py", line 553, in delete_experiment
+    experiment = self._get_experiment(session, experiment_id, ViewType.ACTIVE_ONLY)
+  File "/home/murtuza/Desktop/Mlops_training/E2E_Projects/Wine_quality_prediction/venv/lib/python3.10/site-packages/mlflow/store/tracking/sqlalchemy_store.py", line 508, in _get_experiment
+    raise MlflowException(
+mlflow.exceptions.MlflowException: No Experiment with id=2 exists
+[2026-02-06 14:24:43,253: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-02-06 14:24:43,255: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-02-06 14:24:43,258: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-06 14:24:43,258: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-06 14:24:43,259: INFO: common: created directory at: artifacts]
+[2026-02-06 14:24:43,259: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-02-06 14:24:43,259: INFO: data_ingestion: File already exists]
+[2026-02-06 14:24:43,259: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-02-06 14:24:43,259: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2026-02-06 14:24:43,261: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-02-06 14:24:43,264: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-06 14:24:43,265: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-06 14:24:43,265: INFO: common: created directory at: artifacts]
+[2026-02-06 14:24:43,265: INFO: common: created directory at: artifacts/data_validation]
+[2026-02-06 14:24:43,268: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2026-02-06 14:24:43,268: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2026-02-06 14:24:43,270: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-02-06 14:24:43,273: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-06 14:24:43,274: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-06 14:24:43,274: INFO: common: created directory at: artifacts]
+[2026-02-06 14:24:43,274: INFO: common: created directory at: artifacts/data_transformation]
+[2026-02-06 14:24:43,282: INFO: data_transformation: Splited data into training and test sets]
+[2026-02-06 14:24:43,282: INFO: data_transformation: (1199, 12)]
+[2026-02-06 14:24:43,282: INFO: data_transformation: (400, 12)]
+[2026-02-06 14:24:43,282: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2026-02-06 14:24:43,282: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2026-02-06 14:24:43,284: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-02-06 14:24:43,287: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-06 14:24:43,288: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-06 14:24:43,288: INFO: common: created directory at: artifacts]
+[2026-02-06 14:24:43,288: INFO: common: created directory at: artifacts/model_trainer]
+[2026-02-06 14:24:43,587: INFO: main: >>>>>> stage Model Trainer stage completed <<<<<<
+
+x==========x]
+[2026-02-06 14:24:43,587: INFO: main: >>>>>> stage Model evaluation stage started <<<<<<]
+[2026-02-06 14:24:43,590: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-02-06 14:24:43,596: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-06 14:24:43,598: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-06 14:24:43,598: INFO: common: created directory at: artifacts]
+[2026-02-06 14:24:43,598: INFO: common: created directory at: artifacts/model_evaluation]
+[2026-02-06 14:24:43,598: ERROR: main: ModelEvaluationConfig.__init__() missing 2 required positional arguments: 'all_params' and 'best_run_id_path']
+Traceback (most recent call last):
+  File "/home/murtuza/Desktop/Mlops_training/E2E_Projects/Wine_quality_prediction/main.py", line 55, in <module>
+    data_ingestion.initiate_model_evaluation()
+  File "/home/murtuza/Desktop/Mlops_training/E2E_Projects/Wine_quality_prediction/src/datascience/pipeline/model_evaluation_pipeline.py", line 13, in initiate_model_evaluation
+    model_evaluation_config = config.get_model_evaluation_config()
+  File "/home/murtuza/Desktop/Mlops_training/E2E_Projects/Wine_quality_prediction/src/datascience/config/configuration.py", line 87, in get_model_evaluation_config
+    model_evaluation_config = ModelEvaluationConfig(
+TypeError: ModelEvaluationConfig.__init__() missing 2 required positional arguments: 'all_params' and 'best_run_id_path'
+[2026-02-06 14:25:14,736: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-02-06 14:25:14,738: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-02-06 14:25:14,741: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-06 14:25:14,742: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-06 14:25:14,742: INFO: common: created directory at: artifacts]
+[2026-02-06 14:25:14,742: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-02-06 14:25:14,742: INFO: data_ingestion: File already exists]
+[2026-02-06 14:25:14,743: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-02-06 14:25:14,743: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2026-02-06 14:25:14,744: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-02-06 14:25:14,747: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-06 14:25:14,748: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-06 14:25:14,748: INFO: common: created directory at: artifacts]
+[2026-02-06 14:25:14,748: INFO: common: created directory at: artifacts/data_validation]
+[2026-02-06 14:25:14,751: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2026-02-06 14:25:14,751: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2026-02-06 14:25:14,753: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-02-06 14:25:14,756: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-06 14:25:14,757: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-06 14:25:14,757: INFO: common: created directory at: artifacts]
+[2026-02-06 14:25:14,757: INFO: common: created directory at: artifacts/data_transformation]
+[2026-02-06 14:25:14,764: INFO: data_transformation: Splited data into training and test sets]
+[2026-02-06 14:25:14,764: INFO: data_transformation: (1199, 12)]
+[2026-02-06 14:25:14,764: INFO: data_transformation: (400, 12)]
+[2026-02-06 14:25:14,764: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2026-02-06 14:25:14,764: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2026-02-06 14:25:14,766: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-02-06 14:25:14,769: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-06 14:25:14,770: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-06 14:25:14,770: INFO: common: created directory at: artifacts]
+[2026-02-06 14:25:14,771: INFO: common: created directory at: artifacts/model_trainer]
+[2026-02-06 14:25:15,068: ERROR: main: Cannot set a deleted experiment 'Wine Quality Multi-Model Comparison' as the active experiment. You can restore the experiment, or permanently delete the experiment to create a new one.]
+Traceback (most recent call last):
+  File "/home/murtuza/Desktop/Mlops_training/E2E_Projects/Wine_quality_prediction/main.py", line 45, in <module>
+    data_ingestion.initiate_model_training()
+  File "/home/murtuza/Desktop/Mlops_training/E2E_Projects/Wine_quality_prediction/src/datascience/pipeline/model_trainer_pipeline.py", line 16, in initiate_model_training
+    model_trainer_config.train()
+  File "/home/murtuza/Desktop/Mlops_training/E2E_Projects/Wine_quality_prediction/src/datascience/components/model_trainer.py", line 159, in train
+    mlflow.set_experiment(self.experiment_name)
+  File "/home/murtuza/Desktop/Mlops_training/E2E_Projects/Wine_quality_prediction/venv/lib/python3.10/site-packages/mlflow/tracking/fluent.py", line 220, in set_experiment
+    raise MlflowException(
+mlflow.exceptions.MlflowException: Cannot set a deleted experiment 'Wine Quality Multi-Model Comparison' as the active experiment. You can restore the experiment, or permanently delete the experiment to create a new one.
+[2026-02-06 14:30:16,632: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-02-06 14:30:16,634: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-02-06 14:30:16,637: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-06 14:30:16,637: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-06 14:30:16,638: INFO: common: created directory at: artifacts]
+[2026-02-06 14:30:16,638: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-02-06 14:30:16,638: INFO: data_ingestion: File already exists]
+[2026-02-06 14:30:16,638: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-02-06 14:30:16,638: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2026-02-06 14:30:16,640: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-02-06 14:30:16,643: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-06 14:30:16,644: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-06 14:30:16,645: INFO: common: created directory at: artifacts]
+[2026-02-06 14:30:16,645: INFO: common: created directory at: artifacts/data_validation]
+[2026-02-06 14:30:16,647: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2026-02-06 14:30:16,647: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2026-02-06 14:30:16,649: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-02-06 14:30:16,652: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-06 14:30:16,653: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-06 14:30:16,653: INFO: common: created directory at: artifacts]
+[2026-02-06 14:30:16,653: INFO: common: created directory at: artifacts/data_transformation]
+[2026-02-06 14:30:16,661: INFO: data_transformation: Splited data into training and test sets]
+[2026-02-06 14:30:16,661: INFO: data_transformation: (1199, 12)]
+[2026-02-06 14:30:16,661: INFO: data_transformation: (400, 12)]
+[2026-02-06 14:30:16,661: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2026-02-06 14:30:16,661: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2026-02-06 14:30:16,663: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-02-06 14:30:16,666: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-06 14:30:16,666: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-06 14:30:16,667: INFO: common: created directory at: artifacts]
+[2026-02-06 14:30:16,667: INFO: common: created directory at: artifacts/model_trainer]
+[2026-02-06 14:30:16,957: ERROR: main: 'MlflowClient' object has no attribute 'restore_experiment_by_name']
+Traceback (most recent call last):
+  File "/home/murtuza/Desktop/Mlops_training/E2E_Projects/Wine_quality_prediction/main.py", line 45, in <module>
+    data_ingestion.initiate_model_training()
+  File "/home/murtuza/Desktop/Mlops_training/E2E_Projects/Wine_quality_prediction/src/datascience/pipeline/model_trainer_pipeline.py", line 16, in initiate_model_training
+    model_trainer_config.train()
+  File "/home/murtuza/Desktop/Mlops_training/E2E_Projects/Wine_quality_prediction/src/datascience/components/model_trainer.py", line 161, in train
+    client.restore_experiment_by_name(
+AttributeError: 'MlflowClient' object has no attribute 'restore_experiment_by_name'. Did you mean: 'get_experiment_by_name'?
+[2026-02-06 14:31:22,527: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-02-06 14:31:22,529: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-02-06 14:31:22,532: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-06 14:31:22,533: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-06 14:31:22,533: INFO: common: created directory at: artifacts]
+[2026-02-06 14:31:22,533: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-02-06 14:31:22,533: INFO: data_ingestion: File already exists]
+[2026-02-06 14:31:22,534: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-02-06 14:31:22,534: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2026-02-06 14:31:22,535: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-02-06 14:31:22,538: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-06 14:31:22,539: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-06 14:31:22,539: INFO: common: created directory at: artifacts]
+[2026-02-06 14:31:22,539: INFO: common: created directory at: artifacts/data_validation]
+[2026-02-06 14:31:22,542: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2026-02-06 14:31:22,542: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2026-02-06 14:31:22,544: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-02-06 14:31:22,547: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-06 14:31:22,548: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-06 14:31:22,548: INFO: common: created directory at: artifacts]
+[2026-02-06 14:31:22,548: INFO: common: created directory at: artifacts/data_transformation]
+[2026-02-06 14:31:22,556: INFO: data_transformation: Splited data into training and test sets]
+[2026-02-06 14:31:22,556: INFO: data_transformation: (1199, 12)]
+[2026-02-06 14:31:22,556: INFO: data_transformation: (400, 12)]
+[2026-02-06 14:31:22,556: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2026-02-06 14:31:22,556: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2026-02-06 14:31:22,557: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-02-06 14:31:22,560: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-06 14:31:22,561: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-06 14:31:22,561: INFO: common: created directory at: artifacts]
+[2026-02-06 14:31:22,561: INFO: common: created directory at: artifacts/model_trainer]
+[2026-02-06 14:31:22,873: INFO: model_trainer: Starting multi-model training with 5 models]
+[2026-02-06 14:31:22,873: INFO: model_trainer: Training data shape: (1199, 11)]
+[2026-02-06 14:31:22,873: INFO: model_trainer: Test data shape: (400, 11)]
+[2026-02-06 14:31:22,873: INFO: model_trainer: Training ElasticNet...]
+[2026-02-06 14:31:22,873: INFO: model_trainer: Performing GridSearchCV for ElasticNet]
+[2026-02-06 14:31:24,082: INFO: model_trainer: ElasticNet - Best CV Score: 0.3485]
+[2026-02-06 14:31:24,082: INFO: model_trainer: ElasticNet - Test R2: 0.3019]
+[2026-02-06 14:31:24,082: INFO: model_trainer: ElasticNet - Best Params: {'alpha': 0.001, 'l1_ratio': 0.1, 'random_state': 42}]
+[2026-02-06 14:31:26,359: INFO: model_trainer: Training RandomForestRegressor...]
+[2026-02-06 14:31:26,360: INFO: model_trainer: Performing GridSearchCV for RandomForestRegressor]
+[2026-02-06 14:31:31,469: INFO: model_trainer: RandomForestRegressor - Best CV Score: 0.4635]
+[2026-02-06 14:31:31,469: INFO: model_trainer: RandomForestRegressor - Test R2: 0.4110]
+[2026-02-06 14:31:31,469: INFO: model_trainer: RandomForestRegressor - Best Params: {'max_depth': 20, 'min_samples_split': 2, 'n_estimators': 300, 'random_state': 42}]
+[2026-02-06 14:31:33,362: INFO: model_trainer: Training GradientBoostingRegressor...]
+[2026-02-06 14:31:33,362: INFO: model_trainer: Performing GridSearchCV for GradientBoostingRegressor]
+[2026-02-06 14:31:34,991: INFO: model_trainer: GradientBoostingRegressor - Best CV Score: 0.4357]
+[2026-02-06 14:31:34,991: INFO: model_trainer: GradientBoostingRegressor - Test R2: 0.3486]
+[2026-02-06 14:31:34,991: INFO: model_trainer: GradientBoostingRegressor - Best Params: {'learning_rate': 0.05, 'max_depth': 5, 'n_estimators': 100, 'random_state': 42}]
+[2026-02-06 14:31:36,748: INFO: model_trainer: Training XGBRegressor...]
+[2026-02-06 14:31:36,748: INFO: model_trainer: Performing GridSearchCV for XGBRegressor]
+[2026-02-06 14:31:38,579: INFO: model_trainer: XGBRegressor - Best CV Score: 0.4477]
+[2026-02-06 14:31:38,579: INFO: model_trainer: XGBRegressor - Test R2: 0.3961]
+[2026-02-06 14:31:38,579: INFO: model_trainer: XGBRegressor - Best Params: {'learning_rate': 0.05, 'max_depth': 6, 'n_estimators': 200, 'random_state': 42, 'subsample': 0.8}]
+[2026-02-06 14:31:40,659: INFO: model_trainer: Training LGBMRegressor...]
+[2026-02-06 14:31:40,659: INFO: model_trainer: Performing GridSearchCV for LGBMRegressor]
+[2026-02-06 14:35:23,269: INFO: model_trainer: LGBMRegressor - Best CV Score: 0.4298]
+[2026-02-06 14:35:23,270: INFO: model_trainer: LGBMRegressor - Test R2: 0.3459]
+[2026-02-06 14:35:23,270: INFO: model_trainer: LGBMRegressor - Best Params: {'learning_rate': 0.05, 'max_depth': 5, 'n_estimators': 100, 'num_leaves': 31, 'random_state': 42, 'silent': True, 'verbose': -1}]
+[2026-02-06 14:35:26,027: INFO: common: json file saved at: artifacts/model_trainer/best_model_info.json]
+[2026-02-06 14:35:26,555: INFO: model_trainer: Training completed. Overall best model: RandomForestRegressor]
+[2026-02-06 14:35:26,555: INFO: model_trainer: Best R2: 0.4110]
+[2026-02-06 14:35:26,556: INFO: main: >>>>>> stage Model Trainer stage completed <<<<<<
+
+x==========x]
+[2026-02-06 14:35:26,556: INFO: main: >>>>>> stage Model evaluation stage started <<<<<<]
+[2026-02-06 14:35:26,557: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-02-06 14:35:26,563: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-06 14:35:26,565: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-06 14:35:26,565: INFO: common: created directory at: artifacts]
+[2026-02-06 14:35:26,565: INFO: common: created directory at: artifacts/model_evaluation]
+[2026-02-06 14:35:26,566: ERROR: main: ModelEvaluationConfig.__init__() missing 2 required positional arguments: 'all_params' and 'best_run_id_path']
+Traceback (most recent call last):
+  File "/home/murtuza/Desktop/Mlops_training/E2E_Projects/Wine_quality_prediction/main.py", line 55, in <module>
+    data_ingestion.initiate_model_evaluation()
+  File "/home/murtuza/Desktop/Mlops_training/E2E_Projects/Wine_quality_prediction/src/datascience/pipeline/model_evaluation_pipeline.py", line 13, in initiate_model_evaluation
+    model_evaluation_config = config.get_model_evaluation_config()
+  File "/home/murtuza/Desktop/Mlops_training/E2E_Projects/Wine_quality_prediction/src/datascience/config/configuration.py", line 87, in get_model_evaluation_config
+    model_evaluation_config = ModelEvaluationConfig(
+TypeError: ModelEvaluationConfig.__init__() missing 2 required positional arguments: 'all_params' and 'best_run_id_path'
+[2026-02-06 14:40:36,442: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-02-06 14:40:36,444: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-02-06 14:40:36,447: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-06 14:40:36,448: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-06 14:40:36,448: INFO: common: created directory at: artifacts]
+[2026-02-06 14:40:36,448: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-02-06 14:40:36,448: INFO: data_ingestion: File already exists]
+[2026-02-06 14:40:36,450: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-02-06 14:40:36,450: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2026-02-06 14:40:36,451: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-02-06 14:40:36,454: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-06 14:40:36,455: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-06 14:40:36,455: INFO: common: created directory at: artifacts]
+[2026-02-06 14:40:36,455: INFO: common: created directory at: artifacts/data_validation]
+[2026-02-06 14:40:36,458: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2026-02-06 14:40:36,458: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2026-02-06 14:40:36,460: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-02-06 14:40:36,463: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-06 14:40:36,464: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-06 14:40:36,464: INFO: common: created directory at: artifacts]
+[2026-02-06 14:40:36,464: INFO: common: created directory at: artifacts/data_transformation]
+[2026-02-06 14:40:36,473: INFO: data_transformation: Splited data into training and test sets]
+[2026-02-06 14:40:36,473: INFO: data_transformation: (1199, 12)]
+[2026-02-06 14:40:36,473: INFO: data_transformation: (400, 12)]
+[2026-02-06 14:40:36,473: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2026-02-06 14:40:36,474: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2026-02-06 14:40:36,475: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-02-06 14:40:36,478: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-06 14:40:36,479: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-06 14:40:36,479: INFO: common: created directory at: artifacts]
+[2026-02-06 14:40:36,479: INFO: common: created directory at: artifacts/model_trainer]
+[2026-02-06 14:40:36,766: INFO: model_trainer: Starting multi-model training with 5 models]
+[2026-02-06 14:40:36,766: INFO: model_trainer: Training data shape: (1199, 11)]
+[2026-02-06 14:40:36,766: INFO: model_trainer: Test data shape: (400, 11)]
+[2026-02-06 14:40:36,766: INFO: model_trainer: Training ElasticNet...]
+[2026-02-06 14:40:36,766: INFO: model_trainer: Performing GridSearchCV for ElasticNet]
+[2026-02-06 14:40:37,925: INFO: model_trainer: ElasticNet - Best CV Score: 0.3365]
+[2026-02-06 14:40:37,925: INFO: model_trainer: ElasticNet - Test R2: 0.3510]
+[2026-02-06 14:40:37,925: INFO: model_trainer: ElasticNet - Best Params: {'alpha': 0.001, 'l1_ratio': 0.1, 'random_state': 42}]
+[2026-02-06 14:40:39,847: INFO: model_trainer: Training RandomForestRegressor...]
+[2026-02-06 14:40:39,847: INFO: model_trainer: Performing GridSearchCV for RandomForestRegressor]
+[2026-02-06 14:40:44,693: INFO: model_trainer: RandomForestRegressor - Best CV Score: 0.4293]
+[2026-02-06 14:40:44,693: INFO: model_trainer: RandomForestRegressor - Test R2: 0.4401]
+[2026-02-06 14:40:44,693: INFO: model_trainer: RandomForestRegressor - Best Params: {'max_depth': 30, 'min_samples_split': 2, 'n_estimators': 300, 'random_state': 42}]
+[2026-02-06 14:40:46,300: INFO: model_trainer: Training GradientBoostingRegressor...]
+[2026-02-06 14:40:46,300: INFO: model_trainer: Performing GridSearchCV for GradientBoostingRegressor]
+[2026-02-06 14:40:47,957: INFO: model_trainer: GradientBoostingRegressor - Best CV Score: 0.3948]
+[2026-02-06 14:40:47,957: INFO: model_trainer: GradientBoostingRegressor - Test R2: 0.3789]
+[2026-02-06 14:40:47,957: INFO: model_trainer: GradientBoostingRegressor - Best Params: {'learning_rate': 0.05, 'max_depth': 3, 'n_estimators': 200, 'random_state': 42}]
+[2026-02-06 14:40:49,323: INFO: model_trainer: Training XGBRegressor...]
+[2026-02-06 14:40:49,323: INFO: model_trainer: Performing GridSearchCV for XGBRegressor]
+[2026-02-06 14:40:51,068: INFO: model_trainer: XGBRegressor - Best CV Score: 0.4225]
+[2026-02-06 14:40:51,068: INFO: model_trainer: XGBRegressor - Test R2: 0.4372]
+[2026-02-06 14:40:51,068: INFO: model_trainer: XGBRegressor - Best Params: {'learning_rate': 0.05, 'max_depth': 9, 'n_estimators': 100, 'random_state': 42, 'subsample': 0.8}]
+[2026-02-06 14:40:53,237: INFO: model_trainer: Training LGBMRegressor...]
+[2026-02-06 14:40:53,237: INFO: model_trainer: Performing GridSearchCV for LGBMRegressor]
+[2026-02-06 14:44:33,287: INFO: model_trainer: LGBMRegressor - Best CV Score: 0.3905]
+[2026-02-06 14:44:33,287: INFO: model_trainer: LGBMRegressor - Test R2: 0.3608]
+[2026-02-06 14:44:33,287: INFO: model_trainer: LGBMRegressor - Best Params: {'learning_rate': 0.05, 'max_depth': 3, 'n_estimators': 100, 'num_leaves': 31, 'random_state': 42, 'silent': True, 'verbose': -1}]
+[2026-02-06 14:44:35,912: INFO: common: json file saved at: artifacts/model_trainer/best_model_info.json]
+[2026-02-06 14:44:36,422: INFO: model_trainer: Training completed. Overall best model: RandomForestRegressor]
+[2026-02-06 14:44:36,422: INFO: model_trainer: Best R2: 0.4401]
+[2026-02-06 14:44:36,424: INFO: main: >>>>>> stage Model Trainer stage completed <<<<<<
+
+x==========x]
+[2026-02-06 14:44:36,424: INFO: main: >>>>>> stage Model evaluation stage started <<<<<<]
+[2026-02-06 14:44:36,425: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-02-06 14:44:36,430: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-06 14:44:36,432: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-06 14:44:36,433: INFO: common: created directory at: artifacts]
+[2026-02-06 14:44:36,433: INFO: common: created directory at: artifacts/model_evaluation]
+[2026-02-06 14:44:36,481: INFO: common: json file saved at: artifacts/model_evaluation/metrics.json]
+[2026-02-06 14:44:36,482: ERROR: main: Argument path of type <class 'str'> to <function save_json at 0x7a7a66532170> does not match annotation type <class 'pathlib.Path'>]
+Traceback (most recent call last):
+  File "/home/murtuza/Desktop/Mlops_training/E2E_Projects/Wine_quality_prediction/main.py", line 55, in <module>
+    data_ingestion.initiate_model_evaluation()
+  File "/home/murtuza/Desktop/Mlops_training/E2E_Projects/Wine_quality_prediction/src/datascience/pipeline/model_evaluation_pipeline.py", line 15, in initiate_model_evaluation
+    model_evaluation.log_into_mlflow()
+  File "/home/murtuza/Desktop/Mlops_training/E2E_Projects/Wine_quality_prediction/src/datascience/components/model_evaluation.py", line 182, in log_into_mlflow
+    self.create_model_card(model, best_model_info, metrics, test_data)
+  File "/home/murtuza/Desktop/Mlops_training/E2E_Projects/Wine_quality_prediction/src/datascience/components/model_evaluation.py", line 152, in create_model_card
+    save_json(model_card_path, model_card)
+  File "/home/murtuza/Desktop/Mlops_training/E2E_Projects/Wine_quality_prediction/venv/lib/python3.10/site-packages/ensure/main.py", line 833, in __call__
+    raise EnsureError(msg.format(arg=arg, f=self.f, t=templ, valt=type(value)))
+ensure.main.EnsureError: Argument path of type <class 'str'> to <function save_json at 0x7a7a66532170> does not match annotation type <class 'pathlib.Path'>
+[2026-02-06 14:51:55,633: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-02-06 14:51:55,634: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-02-06 14:51:55,637: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-06 14:51:55,638: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-06 14:51:55,638: INFO: common: created directory at: artifacts]
+[2026-02-06 14:51:55,638: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-02-06 14:51:55,638: INFO: data_ingestion: File already exists]
+[2026-02-06 14:51:55,640: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-02-06 14:51:55,640: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2026-02-06 14:51:55,641: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-02-06 14:51:55,644: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-06 14:51:55,645: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-06 14:51:55,645: INFO: common: created directory at: artifacts]
+[2026-02-06 14:51:55,645: INFO: common: created directory at: artifacts/data_validation]
+[2026-02-06 14:51:55,648: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2026-02-06 14:51:55,648: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2026-02-06 14:51:55,650: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-02-06 14:51:55,653: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-06 14:51:55,654: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-06 14:51:55,654: INFO: common: created directory at: artifacts]
+[2026-02-06 14:51:55,654: INFO: common: created directory at: artifacts/data_transformation]
+[2026-02-06 14:51:55,663: INFO: data_transformation: Splited data into training and test sets]
+[2026-02-06 14:51:55,663: INFO: data_transformation: (1199, 12)]
+[2026-02-06 14:51:55,663: INFO: data_transformation: (400, 12)]
+[2026-02-06 14:51:55,663: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2026-02-06 14:51:55,663: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2026-02-06 14:51:55,665: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-02-06 14:51:55,668: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-06 14:51:55,669: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-06 14:51:55,669: INFO: common: created directory at: artifacts]
+[2026-02-06 14:51:55,669: INFO: common: created directory at: artifacts/model_trainer]
+[2026-02-06 14:51:56,007: INFO: model_trainer: Starting multi-model training with 5 models]
+[2026-02-06 14:51:56,007: INFO: model_trainer: Training data shape: (1199, 11)]
+[2026-02-06 14:51:56,007: INFO: model_trainer: Test data shape: (400, 11)]
+[2026-02-06 14:51:56,007: INFO: model_trainer: Training ElasticNet...]
+[2026-02-06 14:51:56,007: INFO: model_trainer: Performing GridSearchCV for ElasticNet]
+[2026-02-06 14:51:57,200: INFO: model_trainer: ElasticNet - Best CV Score: 0.3642]
+[2026-02-06 14:51:57,200: INFO: model_trainer: ElasticNet - Test R2: 0.2506]
+[2026-02-06 14:51:57,200: INFO: model_trainer: ElasticNet - Best Params: {'alpha': 0.001, 'l1_ratio': 0.1, 'random_state': 42}]
+[2026-02-06 14:51:59,097: INFO: model_trainer: Training RandomForestRegressor...]
+[2026-02-06 14:51:59,097: INFO: model_trainer: Performing GridSearchCV for RandomForestRegressor]
+[2026-02-06 14:52:03,954: INFO: model_trainer: RandomForestRegressor - Best CV Score: 0.4561]
+[2026-02-06 14:52:03,954: INFO: model_trainer: RandomForestRegressor - Test R2: 0.4068]
+[2026-02-06 14:52:03,954: INFO: model_trainer: RandomForestRegressor - Best Params: {'max_depth': 30, 'min_samples_split': 2, 'n_estimators': 300, 'random_state': 42}]
+[2026-02-06 14:52:05,656: INFO: model_trainer: Training GradientBoostingRegressor...]
+[2026-02-06 14:52:05,656: INFO: model_trainer: Performing GridSearchCV for GradientBoostingRegressor]
+[2026-02-06 14:52:07,364: INFO: model_trainer: GradientBoostingRegressor - Best CV Score: 0.4233]
+[2026-02-06 14:52:07,364: INFO: model_trainer: GradientBoostingRegressor - Test R2: 0.3370]
+[2026-02-06 14:52:07,364: INFO: model_trainer: GradientBoostingRegressor - Best Params: {'learning_rate': 0.05, 'max_depth': 5, 'n_estimators': 100, 'random_state': 42}]
+[2026-02-06 14:52:09,020: INFO: model_trainer: Training XGBRegressor...]
+[2026-02-06 14:52:09,020: INFO: model_trainer: Performing GridSearchCV for XGBRegressor]
+[2026-02-06 14:52:10,950: INFO: model_trainer: XGBRegressor - Best CV Score: 0.4395]
+[2026-02-06 14:52:10,951: INFO: model_trainer: XGBRegressor - Test R2: 0.3882]
+[2026-02-06 14:52:10,951: INFO: model_trainer: XGBRegressor - Best Params: {'learning_rate': 0.05, 'max_depth': 9, 'n_estimators': 100, 'random_state': 42, 'subsample': 0.9}]
+[2026-02-06 14:52:13,584: INFO: model_trainer: Training LGBMRegressor...]
+[2026-02-06 14:52:13,584: INFO: model_trainer: Performing GridSearchCV for LGBMRegressor]
+[2026-02-06 14:55:56,625: INFO: model_trainer: LGBMRegressor - Best CV Score: 0.4249]
+[2026-02-06 14:55:56,625: INFO: model_trainer: LGBMRegressor - Test R2: 0.3172]
+[2026-02-06 14:55:56,625: INFO: model_trainer: LGBMRegressor - Best Params: {'learning_rate': 0.05, 'max_depth': 5, 'n_estimators': 100, 'num_leaves': 31, 'random_state': 42, 'silent': True, 'verbose': -1}]
+[2026-02-06 14:55:59,817: INFO: common: json file saved at: artifacts/model_trainer/best_model_info.json]
+[2026-02-06 14:56:00,288: INFO: model_trainer: Training completed. Overall best model: RandomForestRegressor]
+[2026-02-06 14:56:00,288: INFO: model_trainer: Best R2: 0.4068]
+[2026-02-06 14:56:00,289: INFO: main: >>>>>> stage Model Trainer stage completed <<<<<<
+
+x==========x]
+[2026-02-06 14:56:00,290: INFO: main: >>>>>> stage Model evaluation stage started <<<<<<]
+[2026-02-06 14:56:00,291: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-02-06 14:56:00,296: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-06 14:56:00,298: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-06 14:56:00,299: INFO: common: created directory at: artifacts]
+[2026-02-06 14:56:00,299: INFO: common: created directory at: artifacts/model_evaluation]
+[2026-02-06 14:56:00,346: INFO: common: json file saved at: artifacts/model_evaluation/metrics.json]
+[2026-02-06 14:56:00,347: INFO: common: json file saved at: artifacts/model_evaluation/model_card.json]
+[2026-02-06 14:56:00,391: INFO: model_evaluation: Registering best model: RandomForestRegressor]
+[2026-02-06 14:56:00,391: INFO: model_evaluation: Model metrics: R2=0.4068, RMSE=0.5748]
+[2026-02-06 14:56:01,245: INFO: model_evaluation: Model registered successfully: WineQuality_Best_Model]
+[2026-02-06 14:56:01,245: INFO: model_evaluation: Version: 1]
+[2026-02-06 14:56:01,246: INFO: model_evaluation: Stage: Staging]
+[2026-02-06 14:56:01,246: ERROR: model_evaluation: Error registering model: Argument path of type <class 'str'> to <function save_json at 0x7c8531736170> does not match annotation type <class 'pathlib.Path'>]
+[2026-02-06 14:56:01,246: ERROR: main: Argument path of type <class 'str'> to <function save_json at 0x7c8531736170> does not match annotation type <class 'pathlib.Path'>]
+Traceback (most recent call last):
+  File "/home/murtuza/Desktop/Mlops_training/E2E_Projects/Wine_quality_prediction/main.py", line 55, in <module>
+    data_ingestion.initiate_model_evaluation()
+  File "/home/murtuza/Desktop/Mlops_training/E2E_Projects/Wine_quality_prediction/src/datascience/pipeline/model_evaluation_pipeline.py", line 15, in initiate_model_evaluation
+    model_evaluation.log_into_mlflow()
+  File "/home/murtuza/Desktop/Mlops_training/E2E_Projects/Wine_quality_prediction/src/datascience/components/model_evaluation.py", line 185, in log_into_mlflow
+    registered_model = self.register_best_model(best_model_info_path, test_data)
+  File "/home/murtuza/Desktop/Mlops_training/E2E_Projects/Wine_quality_prediction/src/datascience/components/model_evaluation.py", line 121, in register_best_model
+    save_json(reg_info_path, registration_info)
+  File "/home/murtuza/Desktop/Mlops_training/E2E_Projects/Wine_quality_prediction/venv/lib/python3.10/site-packages/ensure/main.py", line 833, in __call__
+    raise EnsureError(msg.format(arg=arg, f=self.f, t=templ, valt=type(value)))
+ensure.main.EnsureError: Argument path of type <class 'str'> to <function save_json at 0x7c8531736170> does not match annotation type <class 'pathlib.Path'>
+[2026-02-06 14:59:51,599: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-02-06 14:59:51,601: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-02-06 14:59:51,604: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-06 14:59:51,605: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-06 14:59:51,605: INFO: common: created directory at: artifacts]
+[2026-02-06 14:59:51,605: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-02-06 14:59:51,605: INFO: data_ingestion: File already exists]
+[2026-02-06 14:59:51,606: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-02-06 14:59:51,606: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2026-02-06 14:59:51,608: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-02-06 14:59:51,611: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-06 14:59:51,612: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-06 14:59:51,612: INFO: common: created directory at: artifacts]
+[2026-02-06 14:59:51,612: INFO: common: created directory at: artifacts/data_validation]
+[2026-02-06 14:59:51,615: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2026-02-06 14:59:51,615: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2026-02-06 14:59:51,617: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-02-06 14:59:51,620: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-06 14:59:51,621: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-06 14:59:51,621: INFO: common: created directory at: artifacts]
+[2026-02-06 14:59:51,621: INFO: common: created directory at: artifacts/data_transformation]
+[2026-02-06 14:59:51,630: INFO: data_transformation: Splited data into training and test sets]
+[2026-02-06 14:59:51,630: INFO: data_transformation: (1199, 12)]
+[2026-02-06 14:59:51,630: INFO: data_transformation: (400, 12)]
+[2026-02-06 14:59:51,630: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2026-02-06 14:59:51,630: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2026-02-06 14:59:51,631: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-02-06 14:59:51,634: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-06 14:59:51,635: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-06 14:59:51,635: INFO: common: created directory at: artifacts]
+[2026-02-06 14:59:51,635: INFO: common: created directory at: artifacts/model_trainer]
+[2026-02-06 14:59:51,928: INFO: model_trainer: Starting multi-model training with 5 models]
+[2026-02-06 14:59:51,928: INFO: model_trainer: Training data shape: (1199, 11)]
+[2026-02-06 14:59:51,928: INFO: model_trainer: Test data shape: (400, 11)]
+[2026-02-06 14:59:51,928: INFO: model_trainer: Training ElasticNet...]
+[2026-02-06 14:59:51,928: INFO: model_trainer: Performing GridSearchCV for ElasticNet]
+[2026-02-06 14:59:53,081: INFO: model_trainer: ElasticNet - Best CV Score: 0.3318]
+[2026-02-06 14:59:53,082: INFO: model_trainer: ElasticNet - Test R2: 0.3604]
+[2026-02-06 14:59:53,082: INFO: model_trainer: ElasticNet - Best Params: {'alpha': 0.001, 'l1_ratio': 0.1, 'random_state': 42}]
+[2026-02-06 14:59:55,004: INFO: model_trainer: Training RandomForestRegressor...]
+[2026-02-06 14:59:55,004: INFO: model_trainer: Performing GridSearchCV for RandomForestRegressor]
+[2026-02-06 14:59:59,446: INFO: model_trainer: RandomForestRegressor - Best CV Score: 0.4174]
+[2026-02-06 14:59:59,446: INFO: model_trainer: RandomForestRegressor - Test R2: 0.4902]
+[2026-02-06 14:59:59,446: INFO: model_trainer: RandomForestRegressor - Best Params: {'max_depth': 30, 'min_samples_split': 2, 'n_estimators': 200, 'random_state': 42}]
+[2026-02-06 15:00:00,893: INFO: model_trainer: Training GradientBoostingRegressor...]
+[2026-02-06 15:00:00,893: INFO: model_trainer: Performing GridSearchCV for GradientBoostingRegressor]
+[2026-02-06 15:00:02,545: INFO: model_trainer: GradientBoostingRegressor - Best CV Score: 0.3739]
+[2026-02-06 15:00:02,545: INFO: model_trainer: GradientBoostingRegressor - Test R2: 0.4384]
+[2026-02-06 15:00:02,545: INFO: model_trainer: GradientBoostingRegressor - Best Params: {'learning_rate': 0.05, 'max_depth': 5, 'n_estimators': 100, 'random_state': 42}]
+[2026-02-06 15:00:03,895: INFO: model_trainer: Training XGBRegressor...]
+[2026-02-06 15:00:03,895: INFO: model_trainer: Performing GridSearchCV for XGBRegressor]
+[2026-02-06 15:00:05,714: INFO: model_trainer: XGBRegressor - Best CV Score: 0.3978]
+[2026-02-06 15:00:05,715: INFO: model_trainer: XGBRegressor - Test R2: 0.5012]
+[2026-02-06 15:00:05,715: INFO: model_trainer: XGBRegressor - Best Params: {'learning_rate': 0.05, 'max_depth': 9, 'n_estimators': 100, 'random_state': 42, 'subsample': 0.9}]
+[2026-02-06 15:00:08,103: INFO: model_trainer: Training LGBMRegressor...]
+[2026-02-06 15:00:08,103: INFO: model_trainer: Performing GridSearchCV for LGBMRegressor]
+[2026-02-06 15:03:41,584: INFO: model_trainer: LGBMRegressor - Best CV Score: 0.3866]
+[2026-02-06 15:03:41,584: INFO: model_trainer: LGBMRegressor - Test R2: 0.4416]
+[2026-02-06 15:03:41,584: INFO: model_trainer: LGBMRegressor - Best Params: {'learning_rate': 0.05, 'max_depth': 5, 'n_estimators': 100, 'num_leaves': 31, 'random_state': 42, 'silent': True, 'verbose': -1}]
+[2026-02-06 15:03:44,278: INFO: common: json file saved at: artifacts/model_trainer/best_model_info.json]
+[2026-02-06 15:03:44,797: INFO: model_trainer: Training completed. Overall best model: XGBRegressor]
+[2026-02-06 15:03:44,797: INFO: model_trainer: Best R2: 0.5012]
+[2026-02-06 15:03:44,797: INFO: main: >>>>>> stage Model Trainer stage completed <<<<<<
+
+x==========x]
+[2026-02-06 15:03:44,797: INFO: main: >>>>>> stage Model evaluation stage started <<<<<<]
+[2026-02-06 15:03:44,799: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-02-06 15:03:44,804: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-06 15:03:44,806: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-06 15:03:44,806: INFO: common: created directory at: artifacts]
+[2026-02-06 15:03:44,806: INFO: common: created directory at: artifacts/model_evaluation]
+[2026-02-06 15:03:44,837: INFO: common: json file saved at: artifacts/model_evaluation/metrics.json]
+[2026-02-06 15:03:44,838: INFO: common: json file saved at: artifacts/model_evaluation/model_card.json]
+[2026-02-06 15:03:44,862: INFO: model_evaluation: Registering best model: XGBRegressor]
+[2026-02-06 15:03:44,862: INFO: model_evaluation: Model metrics: R2=0.5012, RMSE=0.5608]
+[2026-02-06 15:03:45,665: INFO: model_evaluation: Model registered successfully: WineQuality_Best_Model]
+[2026-02-06 15:03:45,666: INFO: model_evaluation: Version: 2]
+[2026-02-06 15:03:45,666: INFO: model_evaluation: Stage: Staging]
+[2026-02-06 15:03:45,666: INFO: common: json file saved at: artifacts/model_evaluation/model_registration_info.json]
+[2026-02-06 15:03:45,990: INFO: common: json file saved at: artifacts/model_evaluation/validation_report.json]
+[2026-02-06 15:03:45,990: INFO: model_evaluation: Model evaluation completed successfully.]
+[2026-02-06 15:03:45,990: INFO: main: >>>>>> stage Model evaluation stage completed <<<<<<
+
+x==========x]
+[2026-02-06 15:52:06,907: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-02-06 15:52:06,909: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-02-06 15:52:06,912: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-06 15:52:06,913: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-06 15:52:06,913: INFO: common: created directory at: artifacts]
+[2026-02-06 15:52:06,913: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-02-06 15:52:06,913: INFO: data_ingestion: File already exists]
+[2026-02-06 15:52:06,914: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-02-06 15:52:06,914: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2026-02-06 15:52:06,916: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-02-06 15:52:06,919: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-06 15:52:06,920: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-06 15:52:06,920: INFO: common: created directory at: artifacts]
+[2026-02-06 15:52:06,920: INFO: common: created directory at: artifacts/data_validation]
+[2026-02-06 15:52:06,923: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2026-02-06 15:52:06,923: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2026-02-06 15:52:06,924: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-02-06 15:52:06,928: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-06 15:52:06,929: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-06 15:52:06,929: INFO: common: created directory at: artifacts]
+[2026-02-06 15:52:06,929: INFO: common: created directory at: artifacts/data_transformation]
+[2026-02-06 15:52:06,938: INFO: data_transformation: Splited data into training and test sets]
+[2026-02-06 15:52:06,938: INFO: data_transformation: (1199, 12)]
+[2026-02-06 15:52:06,938: INFO: data_transformation: (400, 12)]
+[2026-02-06 15:52:06,938: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2026-02-06 15:52:06,938: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2026-02-06 15:52:06,939: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-02-06 15:52:06,942: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-06 15:52:06,943: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-06 15:52:06,943: INFO: common: created directory at: artifacts]
+[2026-02-06 15:52:06,943: INFO: common: created directory at: artifacts/model_trainer]
+[2026-02-06 15:52:07,244: INFO: model_trainer: Starting multi-model training with 5 models]
+[2026-02-06 15:52:07,244: INFO: model_trainer: Training data shape: (1199, 11)]
+[2026-02-06 15:52:07,244: INFO: model_trainer: Test data shape: (400, 11)]
+[2026-02-06 15:52:07,244: INFO: model_trainer: Training ElasticNet...]
+[2026-02-06 15:52:07,244: INFO: model_trainer: Performing GridSearchCV for ElasticNet]
+[2026-02-06 15:52:08,464: INFO: model_trainer: ElasticNet - Best CV Score: 0.3547]
+[2026-02-06 15:52:08,464: INFO: model_trainer: ElasticNet - Test R2: 0.3227]
+[2026-02-06 15:52:08,464: INFO: model_trainer: ElasticNet - Best Params: {'alpha': 0.001, 'l1_ratio': 0.1, 'random_state': 42}]
+[2026-02-06 15:52:10,673: INFO: model_trainer: Training RandomForestRegressor...]
+[2026-02-06 15:52:10,673: INFO: model_trainer: Performing GridSearchCV for RandomForestRegressor]
+[2026-02-06 15:52:15,064: INFO: model_trainer: RandomForestRegressor - Best CV Score: 0.4325]
+[2026-02-06 15:52:15,065: INFO: model_trainer: RandomForestRegressor - Test R2: 0.4871]
+[2026-02-06 15:52:15,065: INFO: model_trainer: RandomForestRegressor - Best Params: {'max_depth': 30, 'min_samples_split': 2, 'n_estimators': 200, 'random_state': 42}]
+[2026-02-06 15:52:16,575: INFO: model_trainer: Training GradientBoostingRegressor...]
+[2026-02-06 15:52:16,575: INFO: model_trainer: Performing GridSearchCV for GradientBoostingRegressor]
+[2026-02-06 15:52:18,376: INFO: model_trainer: GradientBoostingRegressor - Best CV Score: 0.4124]
+[2026-02-06 15:52:18,376: INFO: model_trainer: GradientBoostingRegressor - Test R2: 0.4428]
+[2026-02-06 15:52:18,376: INFO: model_trainer: GradientBoostingRegressor - Best Params: {'learning_rate': 0.05, 'max_depth': 5, 'n_estimators': 200, 'random_state': 42}]
+[2026-02-06 15:52:19,851: INFO: model_trainer: Training XGBRegressor...]
+[2026-02-06 15:52:19,851: INFO: model_trainer: Performing GridSearchCV for XGBRegressor]
+[2026-02-06 15:52:21,468: INFO: model_trainer: XGBRegressor - Best CV Score: 0.4186]
+[2026-02-06 15:52:21,468: INFO: model_trainer: XGBRegressor - Test R2: 0.4201]
+[2026-02-06 15:52:21,468: INFO: model_trainer: XGBRegressor - Best Params: {'learning_rate': 0.05, 'max_depth': 6, 'n_estimators': 100, 'random_state': 42, 'subsample': 0.8}]
+[2026-02-06 15:52:23,794: INFO: model_trainer: Training LGBMRegressor...]
+[2026-02-06 15:52:23,794: INFO: model_trainer: Performing GridSearchCV for LGBMRegressor]
+[2026-02-06 15:56:04,953: INFO: model_trainer: LGBMRegressor - Best CV Score: 0.4114]
+[2026-02-06 15:56:04,954: INFO: model_trainer: LGBMRegressor - Test R2: 0.4128]
+[2026-02-06 15:56:04,954: INFO: model_trainer: LGBMRegressor - Best Params: {'learning_rate': 0.05, 'max_depth': 5, 'n_estimators': 100, 'num_leaves': 31, 'random_state': 42, 'silent': True, 'verbose': -1}]
+[2026-02-06 15:56:07,857: INFO: common: json file saved at: artifacts/model_trainer/best_model_info.json]
+[2026-02-06 15:56:07,858: ERROR: main: 'ModelTrainer' object has no attribute 'create_model_comparison_report']
+Traceback (most recent call last):
+  File "/home/murtuza/Desktop/Mlops_training/E2E_Projects/Wine_quality_prediction/main.py", line 45, in <module>
+    data_ingestion.initiate_model_training()
+  File "/home/murtuza/Desktop/Mlops_training/E2E_Projects/Wine_quality_prediction/src/datascience/pipeline/model_trainer_pipeline.py", line 16, in initiate_model_training
+    model_trainer_config.train()
+  File "/home/murtuza/Desktop/Mlops_training/E2E_Projects/Wine_quality_prediction/src/datascience/components/model_trainer.py", line 203, in train
+    self.create_model_comparison_report()
+AttributeError: 'ModelTrainer' object has no attribute 'create_model_comparison_report'
+[2026-02-06 15:57:08,311: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-02-06 15:57:08,313: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-02-06 15:57:08,317: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-06 15:57:08,318: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-06 15:57:08,318: INFO: common: created directory at: artifacts]
+[2026-02-06 15:57:08,318: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-02-06 15:57:08,318: INFO: data_ingestion: File already exists]
+[2026-02-06 15:57:08,319: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-02-06 15:57:08,319: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2026-02-06 15:57:08,321: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-02-06 15:57:08,324: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-06 15:57:08,325: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-06 15:57:08,325: INFO: common: created directory at: artifacts]
+[2026-02-06 15:57:08,325: INFO: common: created directory at: artifacts/data_validation]
+[2026-02-06 15:57:08,328: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2026-02-06 15:57:08,328: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2026-02-06 15:57:08,329: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-02-06 15:57:08,333: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-06 15:57:08,334: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-06 15:57:08,334: INFO: common: created directory at: artifacts]
+[2026-02-06 15:57:08,334: INFO: common: created directory at: artifacts/data_transformation]
+[2026-02-06 15:57:08,343: INFO: data_transformation: Splited data into training and test sets]
+[2026-02-06 15:57:08,343: INFO: data_transformation: (1199, 12)]
+[2026-02-06 15:57:08,343: INFO: data_transformation: (400, 12)]
+[2026-02-06 15:57:08,343: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2026-02-06 15:57:08,343: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2026-02-06 15:57:08,345: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-02-06 15:57:08,348: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-06 15:57:08,349: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-06 15:57:08,349: INFO: common: created directory at: artifacts]
+[2026-02-06 15:57:08,349: INFO: common: created directory at: artifacts/model_trainer]
+[2026-02-06 15:57:08,641: INFO: model_trainer: Starting multi-model training with 5 models]
+[2026-02-06 15:57:08,641: INFO: model_trainer: Training data shape: (1199, 11)]
+[2026-02-06 15:57:08,641: INFO: model_trainer: Test data shape: (400, 11)]
+[2026-02-06 15:57:08,641: INFO: model_trainer: Training ElasticNet...]
+[2026-02-06 15:57:08,641: INFO: model_trainer: Performing GridSearchCV for ElasticNet]
+[2026-02-06 15:57:09,817: INFO: model_trainer: ElasticNet - Best CV Score: 0.3358]
+[2026-02-06 15:57:09,817: INFO: model_trainer: ElasticNet - Test R2: 0.3726]
+[2026-02-06 15:57:09,817: INFO: model_trainer: ElasticNet - Best Params: {'alpha': 0.001, 'l1_ratio': 0.9, 'random_state': 42}]
+[2026-02-06 15:57:11,693: INFO: model_trainer: Training RandomForestRegressor...]
+[2026-02-06 15:57:11,693: INFO: model_trainer: Performing GridSearchCV for RandomForestRegressor]
+[2026-02-06 15:57:16,547: INFO: model_trainer: RandomForestRegressor - Best CV Score: 0.4412]
+[2026-02-06 15:57:16,547: INFO: model_trainer: RandomForestRegressor - Test R2: 0.5035]
+[2026-02-06 15:57:16,548: INFO: model_trainer: RandomForestRegressor - Best Params: {'max_depth': 20, 'min_samples_split': 2, 'n_estimators': 300, 'random_state': 42}]
+[2026-02-06 15:57:17,950: INFO: model_trainer: Training GradientBoostingRegressor...]
+[2026-02-06 15:57:17,951: INFO: model_trainer: Performing GridSearchCV for GradientBoostingRegressor]
+[2026-02-06 15:57:19,612: INFO: model_trainer: GradientBoostingRegressor - Best CV Score: 0.4141]
+[2026-02-06 15:57:19,612: INFO: model_trainer: GradientBoostingRegressor - Test R2: 0.4597]
+[2026-02-06 15:57:19,613: INFO: model_trainer: GradientBoostingRegressor - Best Params: {'learning_rate': 0.05, 'max_depth': 5, 'n_estimators': 100, 'random_state': 42}]
+[2026-02-06 15:57:21,041: INFO: model_trainer: Training XGBRegressor...]
+[2026-02-06 15:57:21,041: INFO: model_trainer: Performing GridSearchCV for XGBRegressor]
+[2026-02-06 15:57:33,926: INFO: model_trainer: XGBRegressor - Best CV Score: 0.4250]
+[2026-02-06 15:57:33,926: INFO: model_trainer: XGBRegressor - Test R2: 0.4779]
+[2026-02-06 15:57:33,926: INFO: model_trainer: XGBRegressor - Best Params: {'learning_rate': 0.05, 'max_depth': 6, 'n_estimators': 200, 'random_state': 42, 'subsample': 0.9}]
+[2026-02-06 15:57:36,297: INFO: model_trainer: Training LGBMRegressor...]
+[2026-02-06 15:57:36,297: INFO: model_trainer: Performing GridSearchCV for LGBMRegressor]
+[2026-02-06 16:01:12,082: INFO: model_trainer: LGBMRegressor - Best CV Score: 0.3953]
+[2026-02-06 16:01:12,082: INFO: model_trainer: LGBMRegressor - Test R2: 0.4469]
+[2026-02-06 16:01:12,082: INFO: model_trainer: LGBMRegressor - Best Params: {'learning_rate': 0.05, 'max_depth': 5, 'n_estimators': 100, 'num_leaves': 31, 'random_state': 42, 'silent': True, 'verbose': -1}]
+[2026-02-06 16:01:14,736: INFO: common: json file saved at: artifacts/model_trainer/best_model_info.json]
+[2026-02-06 16:01:14,736: INFO: model_trainer: Training completed. Overall best model: RandomForestRegressor]
+[2026-02-06 16:01:14,736: INFO: model_trainer: Best R2: 0.5035]
+[2026-02-06 16:01:14,737: INFO: main: >>>>>> stage Model Trainer stage completed <<<<<<
+
+x==========x]
+[2026-02-06 16:01:14,737: INFO: main: >>>>>> stage Model evaluation stage started <<<<<<]
+[2026-02-06 16:01:14,738: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-02-06 16:01:14,742: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-06 16:01:14,744: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-06 16:01:14,745: INFO: common: created directory at: artifacts]
+[2026-02-06 16:01:14,745: INFO: common: created directory at: artifacts/model_evaluation]
+[2026-02-06 16:01:14,799: INFO: common: json file saved at: artifacts/model_evaluation/metrics.json]
+[2026-02-06 16:01:14,799: INFO: common: json file saved at: artifacts/model_evaluation/model_card.json]
+[2026-02-06 16:01:14,844: INFO: model_evaluation: Registering best model: RandomForestRegressor]
+[2026-02-06 16:01:14,844: INFO: model_evaluation: Model metrics: R2=0.5035, RMSE=0.5742]
+[2026-02-06 16:01:15,634: INFO: model_evaluation: Model registered successfully: WineQuality_Best_Model]
+[2026-02-06 16:01:15,634: INFO: model_evaluation: Version: 3]
+[2026-02-06 16:01:15,634: INFO: model_evaluation: Stage: Staging]
+[2026-02-06 16:01:15,634: INFO: common: json file saved at: artifacts/model_evaluation/model_registration_info.json]
+[2026-02-06 16:01:15,635: INFO: model_evaluation: Model evaluation completed successfully.]
+[2026-02-06 16:01:15,635: INFO: main: >>>>>> stage Model evaluation stage completed <<<<<<
+
+x==========x]

@@ -56,41 +56,41 @@ class ConfigurationManager:
     
     def get_model_trainer_config(self) -> ModelTrainerConfig:
         config = self.config.model_trainer
-        params = self.params.ElasticNet
-        schema =  self.schema.TARGET_COLUMN
+        params = self.params.models.ElasticNet
+        models_config = self.params.models  # Get all models configuration
+        training_config = self.params.training  # Get training configuration
+        schema = self.schema.TARGET_COLUMN
 
         create_directories([config.root_dir])
 
         model_trainer_config = ModelTrainerConfig(
             root_dir=config.root_dir,
-            train_data_path = config.train_data_path,
-            test_data_path = config.test_data_path,
-            model_name = config.model_name,
-            alpha = params.alpha,
-            l1_ratio = params.l1_ratio,
-            target_column = schema.name
-            
+            train_data_path=config.train_data_path,
+            test_data_path=config.test_data_path,
+            model_name=config.model_name,
+            target_column=schema.name,
+            models_config=models_config,  # Pass entire models config
+            scoring_metric=training_config.scoring_metric,
+            cv_folds=training_config.cv_folds,
+            random_state=training_config.random_state,
+            alpha = params.hyperparameters.alpha,
+            l1_ratio = params.hyperparameters.l1_ratio
         )
-
         return model_trainer_config
-    
+
     def get_model_evaluation_config(self) -> ModelEvaluationConfig:
-        config=self.config.model_evaluation
-        params=self.params.ElasticNet
-        schema=self.schema.TARGET_COLUMN
+        config = self.config.model_evaluation
+        schema = self.schema.TARGET_COLUMN
 
         create_directories([config.root_dir])
 
-        model_evaluation_config=ModelEvaluationConfig(
+        model_evaluation_config = ModelEvaluationConfig(
             root_dir=config.root_dir,
             test_data_path=config.test_data_path,
-            model_path = config.model_path,
-            all_params=params,
-            metric_file_name = config.metric_file_name,
-            target_column = schema.name,
-            mlflow_uri="http://127.0.0.1:5000",
-            best_run_id_path = config.best_run_id_path
-
-
+            model_path=config.model_path,
+            target_column=schema.name,
+            mlflow_uri=config.mlflow_uri,
+            metric_file_name=config.metric_file_name,
+            best_model_info_path=config.best_model_info_path
         )
         return model_evaluation_config
