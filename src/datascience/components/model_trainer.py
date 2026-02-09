@@ -54,13 +54,13 @@ class ModelTrainer:
         return getattr(module, class_name)
     
     def train_single_model(self, model_name, model_config, X_train, y_train, X_test, y_test):
-        """Train and tune a single model"""
+        """Train and tune a single model with nested runs for each parameter combination"""
         logger.info(f"Training {model_name}...")
         
-        best_score = -np.inf
         best_model = None
         best_params = None
         best_metrics = None
+        best_cv_score = -np.inf
         
         # Get model class
         model_class = self.get_model_class(model_config['class'])
@@ -78,55 +78,94 @@ class ModelTrainer:
         
         # Perform Grid Search
         logger.info(f"Performing GridSearchCV for {model_name}")
-        grid_search = GridSearchCV(
-            estimator=model_class(),
-            param_grid=gs_param_grid,
-            scoring='r2',
-            cv=self.config.cv_folds,
-            n_jobs=-1,
-            verbose=0
-        )
         
-        grid_search.fit(X_train, y_train)
+        # Create parent run for this model
+        parent_run_name = f"{model_name}_GridSearch_{datetime.now().strftime('%Y%m%d_%H%M%S')}"
         
-        # Get best model
-        best_model = grid_search.best_estimator_
-        best_params = grid_search.best_params_
-        best_cv_score = grid_search.best_score_
-        
-        # Evaluate on test set
-        y_pred = best_model.predict(X_test)
-        metrics = self.eval_metrics(y_test, y_pred)
-        
-        logger.info(f"{model_name} - Best CV Score: {best_cv_score:.4f}")
-        logger.info(f"{model_name} - Test R2: {metrics['r2']:.4f}")
-        logger.info(f"{model_name} - Best Params: {best_params}")
-        
-        return best_model, best_params, metrics
-    
-    def log_model_to_mlflow(self, model, model_name, params, metrics, X_train, X_test, y_test):
-        """Log a single model to MLflow"""
-        run_name = f"{model_name}_{datetime.now().strftime('%Y%m%d_%H%M%S')}"
-        
-        with mlflow.start_run(run_name=run_name, nested=True) as run:
-            # Log parameters
-            for param_name, param_value in params.items():
-                mlflow.log_param(f"{model_name}_{param_name}", param_value)
+        with mlflow.start_run(run_name=parent_run_name, nested=False) as parent_run:
+            # Log parent run tags
+            mlflow.set_tag("parent_run", True)
+            mlflow.set_tag("model_type", model_name)
+            mlflow.set_tag("total_combinations", self._count_param_combinations(gs_param_grid))
             
-            # Log metrics
-            for metric_name, metric_value in metrics.items():
-                mlflow.log_metric(f"{model_name}_{metric_name}", metric_value)
+            grid_search = GridSearchCV(
+                estimator=model_class(),
+                param_grid=gs_param_grid,
+                scoring='r2',
+                cv=self.config.cv_folds,
+                n_jobs=-1,
+                verbose=0
+            )
             
+            grid_search.fit(X_train, y_train)
+            
+            # Log each parameter combination as a child run
+            for idx, (params, mean_score, std_score) in enumerate(
+                zip(grid_search.cv_results_['params'],
+                    grid_search.cv_results_['mean_test_score'],
+                    grid_search.cv_results_['std_test_score'])
+            ):
+                with mlflow.start_run(run_name=f"params_combination_{idx+1}", nested=True) as child_run:
+                    # Log parameters
+                    for param_name, param_value in params.items():
+                        mlflow.log_param(param_name, param_value)
+                    
+                    # Log CV scores
+                    mlflow.log_metric("cv_mean_score", mean_score)
+                    mlflow.log_metric("cv_std_score", std_score)
+                    mlflow.log_metric("combination_rank", idx + 1)
+                    
+                    # Add tags
+                    mlflow.set_tag("is_best", mean_score == grid_search.best_score_)
+                    mlflow.set_tag("parent_run_id", parent_run.info.run_id)
+            
+            # Get best model from grid search
+            best_model = grid_search.best_estimator_
+            best_params = grid_search.best_params_
+            best_cv_score = grid_search.best_score_
+            
+            # Evaluate on test set
+            y_pred = best_model.predict(X_test)
+            metrics = self.eval_metrics(y_test, y_pred)
+            
+            # Log best results in parent run
+            mlflow.log_metric("best_cv_score", best_cv_score)
+            mlflow.log_metric("test_r2", metrics['r2'])
+            mlflow.log_metric("test_rmse", metrics['rmse'])
+            mlflow.log_metric("test_mae", metrics['mae'])
+            mlflow.log_metric("test_mape", metrics['mape'])
+            
+            # Log best params in parent
+            for param_name, param_value in best_params.items():
+                mlflow.log_param(f"best_{param_name}", param_value)
+            
+            # Set parent tags
+            mlflow.set_tag("best_cv_score", round(best_cv_score, 4))
+            mlflow.set_tag("best_test_r2", round(metrics['r2'], 4))
+            
+            logger.info(f"{model_name} - Best CV Score: {best_cv_score:.4f}")
+            logger.info(f"{model_name} - Test R2: {metrics['r2']:.4f}")
+            logger.info(f"{model_name} - Best Params: {best_params}")
+            
+            # Return parent run ID for later use
+            return best_model, best_params, metrics, parent_run.info.run_id
+
+    def _count_param_combinations(self, param_grid):
+        """Calculate total number of parameter combinations"""
+        total = 1
+        for values in param_grid.values():
+            total *= len(values)
+        return total
+
+    def log_model_to_mlflow(self, model, model_name, params, metrics, X_train, X_test, y_test, parent_run_id):
+        """Log the best model to the parent run"""
+        # Log model in the parent run context
+        with mlflow.start_run(run_id=parent_run_id):
             # Log model with appropriate flavor
             signature = infer_signature(X_train, model.predict(X_train))
             
             # Determine model type for proper logging
             model_type = type(model).__name__
-            
-            # Add tag for model type
-            mlflow.set_tag("model_type", model_name)
-            mlflow.set_tag("model_class", model_type)
-            mlflow.set_tag("training_time", datetime.now().isoformat())
             
             # Log based on model type
             if model_type == 'XGBRegressor':
@@ -141,11 +180,11 @@ class ModelTrainer:
                 mlflow.data.from_pandas(X_test.iloc[:10]),
                 context="test_data_sample"
             )
-            
-            return run.info.run_id
-    
+
     def train(self):
         """Main training method for all models"""
+        # Set MLflow tracking URI to use mlflow_v2.db
+        mlflow.set_tracking_uri("sqlite:///mlflow_v2.db")
         # Load data
         train_data = pd.read_csv(self.config.train_data_path)
         test_data = pd.read_csv(self.config.test_data_path)
@@ -166,14 +205,14 @@ class ModelTrainer:
         # Train each model
         for model_name, model_config in self.models_config.items():
             try:
-                # Train and tune the model
-                model, params, metrics = self.train_single_model(
+                # Train and tune the model (now returns parent_run_id)
+                model, params, metrics, parent_run_id = self.train_single_model(
                     model_name, model_config, X_train, y_train, X_test, y_test
                 )
                 
-                # Log to MLflow
-                run_id = self.log_model_to_mlflow(
-                    model, model_name, params, metrics, X_train, X_test, y_test
+                # Log model to parent run
+                self.log_model_to_mlflow(
+                    model, model_name, params, metrics, X_train, X_test, y_test, parent_run_id
                 )
                 
                 # Store model info
@@ -181,7 +220,7 @@ class ModelTrainer:
                     'model': model,
                     'params': params,
                     'metrics': metrics,
-                    'run_id': run_id,
+                    'run_id': parent_run_id,
                     'model_type': type(model).__name__
                 }
                 
@@ -190,17 +229,14 @@ class ModelTrainer:
                     self.overall_best_model = model
                     self.overall_best_metrics = metrics
                     self.overall_best_model_name = model_name
-                    self.overall_best_run_id = run_id
+                    self.overall_best_run_id = parent_run_id
                     
             except Exception as e:
                 logger.error(f"Error training {model_name}: {str(e)}")
                 continue
-        
+    
         # Save all models locally
         self.save_models(X_train, X_test, y_test)
-        
-        # Create model comparison report
-        # self.create_model_comparison_report()
         
         logger.info(f"Training completed. Overall best model: {self.overall_best_model_name}")
         logger.info(f"Best R2: {self.overall_best_metrics['r2']:.4f}")
