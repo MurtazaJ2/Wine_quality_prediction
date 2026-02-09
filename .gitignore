@@ -1,2 +1,17 @@
 /venv
 /artifacts
+
+# Python
+__pycache__/
+*.py[cod]
+*.class
+*.so
+.Python
+
+# MLflow
+mlruns/
+mlflow_*.db
+
+# Logs
+logs/
+*.log
