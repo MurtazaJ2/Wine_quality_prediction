@@ -1,4 +1,6 @@
 [core]
-    remote = localstore
+    remote = local_storage
 ['remote "localstore"']
     url = ../../dvc-storage-wine-Quality-prediction
+['remote "local_storage"']
+    url = /home/arya/AI SECURITY/dvc-storage-wine-Quality-prediction
